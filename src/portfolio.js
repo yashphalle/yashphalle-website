@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Yash's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "--------",
   og: {
     title: "Yash Phalle Portfolio",
     type: "website",
@@ -23,7 +23,8 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-    "I'm a Final Year Computer Engineering undergrad, I love taking on challenging learning tasks. I actively participate in hackathons, coding competitions, and technical events.I am always passionate about working in the intersection of Machine Learning,Computer Vision,Robotics, and UAVs",  
+  // change this to make in different lines
+    "I'm a Final Year Computer Engineering undergrad, Research Intern @ Indian Institute of Science [IISc],Bangalore.,I love to work in the intersection of Machine Learning,Computer Vision,Robotics, and UAVs",  
     resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",

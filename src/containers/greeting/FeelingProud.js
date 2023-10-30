@@ -3,10 +3,11 @@ import React, { Component } from "react";
 class FeelingProud extends Component {
   render() {
     const theme = this.props.theme;
+    // Change this to curousel 
     return (
       
-       <img alt="saad sitting on table" src={require("../../assests/images/photo.jpg")} style={{ width: "700px", height: "700px" }} ></img> 
-
+       <img alt="yash photo" src={require("../../assests/images/photo.jpg")} style={{ width: "600px", height: "600px" }} ></img> 
+        
       
     );
   }
