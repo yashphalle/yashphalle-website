@@ -1,13 +1,9 @@
 {
   "private": true,
   "name": "masterPortfolio",
-<<<<<<< Updated upstream
   "homepage": "https://yashphalle.github.io",
-=======
-  "homepage": ".",
->>>>>>> Stashed changes
   "version": "0.1.0",
-  "scripts": {
+    "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
