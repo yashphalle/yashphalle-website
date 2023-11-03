@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "masterPortfolio",
-  "homepage": "https://yashphalle.github.io",
+  "name": "yashnewwebsite",
+  "homepage": ".",
   "version": "0.1.0",
-    "scripts": {
+  "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
