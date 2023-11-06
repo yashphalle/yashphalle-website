@@ -51,9 +51,10 @@
 }
 
 .greeting-image-div > * {
-  max-width: 100%;
+  
   height: auto;
-  padding-left: 50px;
+ 
+  
 }
 
 /* Media Query */

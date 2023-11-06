@@ -6,8 +6,8 @@ class FeelingProud extends Component {
     // Change this to curousel 
     return (
       
-       <img alt="yash photo" src={require("../../assests/images/photo.jpg")} style={{ width: "600px", height: "600px" }} ></img> 
-        
+       <img alt="yash photo" src={require("../../assests/images/profile-pic (5).png")}  ></img> 
+       
       
     );
   }
