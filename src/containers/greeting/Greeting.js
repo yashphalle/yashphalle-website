@@ -42,3 +42,4 @@ export default function Greeting(props) {
     </Fade>
   );
 }
+// src\assests\images\profile-pic (5).png

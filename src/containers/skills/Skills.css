@@ -5,13 +5,13 @@
 
 .skills-header {
   font-size: 60px;
-  line-height: normal;
   font-family: "Google Sans Regular";
   text-align: center;
 }
 
 .skills-text {
-  font-size: 20px;
+  font-size: 40px;
+  line-height: 1.5;
 }
 
 .skills-text-div {
@@ -34,7 +34,6 @@
   font-size: 56px;
   font-weight: 400;
   font-family: "Google Sans Regular";
-  line-height: normal;
 }
 
 /* Media Query */
@@ -82,4 +81,16 @@
   .skills-image-div > * {
     margin-top: 0px;
   }
+}
+.carousel-container {
+  width: 500px;  /* Set the width of the carousel */
+  height: 500px; /* Set the height of the carousel */
+  overflow: hidden;
+  position: relative;
+}
+.carousel-container img {
+  width: 100%;    /* Makes the image take up the full width of the container */
+  height: 100%;   /* Makes the image take up the full height of the container */
+  object-fit: cover; /* This will ensure the image covers the area without stretching */
+  display: block;
 }

@@ -1,0 +1,27 @@
+Sections Final
+1- Interests & Skills
+Use proper fonts
+More specific keywords
+Icons of techstack
+
+2- Projects
+Creating a grid of 3*2 
+Replacing Imagees carousal inplace of that
+In that card add a photo or video and short description github url button 
+3- Experience
+4- Competition & Co-curricular Activities
+
+Experience section layout 
+2-3 photos
+description from resume 
+
+Competition - Hacathon photos, Workshop photos 
+
+
+------------Later stage--------------
+Gallery - Miscellinous 
+
+Blogs - 3 
+1-GSoC
+2-IISc
+3- USA

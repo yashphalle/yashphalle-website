@@ -23,23 +23,12 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-  // change this to make in different lines
-    "I'm a Final Year Computer Engineering undergrad, Research Intern @ Indian Institute of Science [IISc],Bangalore.,I love to work in the intersection of Machine Learning,Computer Vision,Robotics, and UAVs",  
-    resumeLink:
+    "🎓Pursuing Master's Aritficial Intelligence at Northeastern University, Boston. I love to work in the intersection of Machine Learning,Computer Vision,Robotics, and UAVs"    ,
+  resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
 
   {
     name: "Github",
@@ -84,34 +73,23 @@ const skills = {
       //logo images here
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
           skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
+          fontAwesomeClassname: "logos-python",
           style: {
             backgroundColor: "transparent",
-            color: "#3776AB",
           },
+        },
+        {
+          skillName: "C++",
+          fontAwesomeClassname: "simple-icons:cplusplus",
+          style: {
+            backgroundColor: "transparent",
+            color: "#00599C",
+          },
+        },
+        {
+          skillName: "ROS",
+          imageSrc: "ros.webp",
         },
         {
           skillName: "Deeplearning",
@@ -120,7 +98,7 @@ const skills = {
       ],
     },
     {
-      title: "Projects and Publications",
+      title: "Projects",
       fileName: "FullStackImg",
       skills: [
         "⚡Development of Deep Learning models for Autonomous Drone Piloting and Support in BehaviorMetrics",
@@ -794,15 +772,13 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
-    description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+    profile_image_path: "",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
       "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "https://blogs.ashutoshhathidara.com/",
+    link: "",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
