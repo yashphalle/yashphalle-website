@@ -1,5 +1,5 @@
 /* Change this file to get your personal Porfolio */
-
+import donkeycar from "./assests/images/donkeycar.png";
 // Website related settings
 const settings = {
   isSplash: false, // Change this to false if you don't want Splash screen.
@@ -8,8 +8,7 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Yash's Portfolio",
-  description:
-    "--------",
+  description: "--------",
   og: {
     title: "Yash Phalle Portfolio",
     type: "website",
@@ -23,13 +22,12 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-    "🎓Pursuing Master's Aritficial Intelligence at Northeastern University, Boston. I love to work in the intersection of Machine Learning,Computer Vision,Robotics, and UAVs"    ,
+    "🎓MS AI @NEU | AI+Robotics🤖 | Research Assistant @Dependable Autonomy Lab (DAL) | Research Intern @IISc Bangalore",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
 };
 
 const socialMediaLinks = [
-
   {
     name: "Github",
     link: "https://github.com/yashphalle/",
@@ -42,7 +40,7 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-  
+
   {
     name: "Gmail",
     link: "mailto:yashphallem@gmail.com",
@@ -55,8 +53,6 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/twitter?style=brands
     backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
   },
-  
-  
 ];
 
 const skills = {
@@ -64,11 +60,12 @@ const skills = {
     {
       // #title sections
       title: "Interests & Skills",
-      fileName: "DataScienceImg",//img
       skills: [
-        "⚡ AI,ML,CV",
-        "⚡ Robotics and UAV",
-        "⚡ Web Developement",
+        "🔍 Areas: Computer Vision, Reinforcement Learning, Robotics, Edge Computing, IoT",
+        "💻 Programming Languages: Python, C++",
+        "🛠️ Framework and Tools: ROS2, ROS, Gazebo, PyTorch, TensorFlow, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git",
+        "🔧 Hardware Experience: Nvidia Jetson Nano, Raspberry Pi, Drone - Pixhawk Px4",
+        "🌐 Software Development: Web Development [MongoDb, Express.Js, React.js, Node Js] (MERN) Stack",
       ],
       //logo images here
       softwareSkills: [
@@ -91,271 +88,166 @@ const skills = {
           skillName: "ROS",
           imageSrc: "ros.webp",
         },
-        {
-          skillName: "Deeplearning",
-          imageSrc: "deeplearning_ai_logo.png",
-        },
       ],
     },
+    // {
+    //   title: "Competition & Co-curricular Activities",
+    //   fileName: "DesignImg",
+    //   skills: [
+
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Adobe XD",
+    //       fontAwesomeClassname: "simple-icons:adobexd",
+    //       style: {
+    //         color: "#FF2BC2",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Figma",
+    //       fontAwesomeClassname: "simple-icons:figma",
+    //       style: {
+    //         color: "#F24E1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Adobe Illustrator",
+    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
+    //       style: {
+    //         color: "#FF7C00",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Inkscape",
+    //       fontAwesomeClassname: "simple-icons:inkscape",
+    //       style: {
+    //         color: "#000000",
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "Gallery",
+    //   fileName: "DesignImg",
+    //   skills: [
+
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Adobe XD",
+    //       fontAwesomeClassname: "simple-icons:adobexd",
+    //       style: {
+    //         color: "#FF2BC2",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Figma",
+    //       fontAwesomeClassname: "simple-icons:figma",
+    //       style: {
+    //         color: "#F24E1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Adobe Illustrator",
+    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
+    //       style: {
+    //         color: "#FF7C00",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Inkscape",
+    //       fontAwesomeClassname: "simple-icons:inkscape",
+    //       style: {
+    //         color: "#000000",
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "Blogs",
+    //   fileName: "DesignImg",
+    //   skills: [
+
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Adobe XD",
+    //       fontAwesomeClassname: "simple-icons:adobexd",
+    //       style: {
+    //         color: "#FF2BC2",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Figma",
+    //       fontAwesomeClassname: "simple-icons:figma",
+    //       style: {
+    //         color: "#F24E1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Adobe Illustrator",
+    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
+    //       style: {
+    //         color: "#FF7C00",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Inkscape",
+    //       fontAwesomeClassname: "simple-icons:inkscape",
+    //       style: {
+    //         color: "#000000",
+    //       },
+    //     },
+    // ],
+    // },
+    ,
+  ],
+};
+
+const projects = {
+  data: [
     {
-      title: "Projects",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡Development of Deep Learning models for Autonomous Drone Piloting and Support in BehaviorMetrics",
-        "⚡Sentinel Drone",
-        "⚡Smart AI-Enabled Automated System for Arranging Blood in Emergency",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
-        },
-      ],
+      title:
+        "Deep Reinforcement Learning Algorithms for Autonomous Driving in Simulation",
+      description: `
+        ● Conducted a comparative analysis of DDPG, TD3, and PPO reinforcement learning algorithms within the Donkey Car simulator.
+        ● Enhanced algorithm performance by Reward Engineering and developing image encoder-decoder architecture for better feature extraction.
+        ● PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.
+      `,
+      thumbnail: require("./assests/images/donkeycar.png"),
+      githubLink: "https://github.com/yourusername/project1",
     },
     {
-      title: "Experience",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Research Internship at Indian Institute of Science",
-        "⚡ Programming Domain head at VRC",
-        "⚡ Technical head at IoT Forum"
-      ],
-      softwareSkills: [
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
-          },
-        },
-      ],
+      title: "Lidar-based SLAM and Autonomous Path Planning for Mobile Robot",
+      description: `
+        ● Designed and implemented a 2D Lidar-based SLAM (Simultaneous Localization and Mapping) system to enable precise navigation and mapping by a mobile robot in dynamic environments.
+        ● Developed autonomous path planning algorithms, incorporating A*(A-star) and Dijkstra’s algorithms to optimize route efficiency and enhance obstacle avoidance capabilities.
+        ● Tech Stack - Python, ROS, Gazebo simulation, NVIDIA Jetson Nano
+      `,
+      thumbnail: require("./assests/images/donkeycar.png"),
+      githubLink: "https://github.com/yourusername/project2",
     },
     {
-      title: "Competition & Co-curricular Activities",
-      fileName: "DesignImg",
-      skills: [
-    
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
+      title: "Sentinel Drone",
+      description: `
+        ● Developed a drone capable of hovering over the entire city detecting suspicious objects and geolocating in Qgis map to assist police in surveillance tasks.
+        ● Implemented Image processing, feature matching, and path planning algorithms in ROS.
+        ● Tech Stack- Python- ROS, Pytorch, OpenCV, QGIS
+      `,
+      thumbnail: require("./assests/images/donkeycar.png"),
+      githubLink: "https://github.com/yourusername/project3",
     },
     {
-      title: "Gallery",
-      fileName: "DesignImg",
-      skills: [
-    
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
-    },
-    {
-      title: "Blogs",
-      fileName: "DesignImg",
-      skills: [
-    
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
+      title:
+        "Safe Landing Spot Detection For UAVs Using Deep Learning Algorithms Suitable for Energy-Constrained Computing",
+      description: `
+        ● Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.
+        ● Optimized the system for edge computing, reducing model size while maintaining high accuracy.
+        ● Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.
+      `,
+      thumbnail: require("./assests/images/donkeycar.png"),
+      githubLink: "https://github.com/yourusername/project4",
     },
   ],
 };
@@ -558,7 +450,87 @@ const certifications = {
   ],
 };
 
-// Experience Page
+//   title: "Experience",
+//   subtitle: "Work, Internship and Volunteership",
+//   description:
+//     "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+//   header_image_path: "experience.svg",
+//   sections: [
+//     {
+//       title: "Work",
+//       work: true,
+//       experiences: [
+//         {
+//           title: "Research Assistant",
+//           company: "Dependable Autonomy Laboratory, Northeastern University",
+//           company_url: "https://www.northeastern.edu/",
+//           logo_path: "northeastern_logo.png",
+//           duration: "Nov 2024 - Present",
+//           location: "Boston, MA",
+//           description:
+//             "Conducting research on Real-Time Hybrid Control for Obstacle Avoidance in Autonomous Robots/Drones Using Visual Language Models (VLMs) and Reinforcement Learning. Integrated state-of-the-art reinforcement learning algorithms for robots with ROS and Gazebo simulations.",
+//           color: "#000000",
+//         },
+//         {
+//           title: "Teaching Assistant- AI Lead",
+//           company: "Northeastern University",
+//           company_url: "https://www.northeastern.edu/",
+//           logo_path: "northeastern_logo.png",
+//           duration: "Dec 2024 - Present",
+//           location: "Boston, MA",
+//           description:
+//             "Course: JRNL 6460 - Artificial Intelligence in Media Industry (AI-MI), Instructor: Prof. John Wihbey. Conducted sessions on Prompt engineering, Generative AI models, LLMs Integration, Diffusion models, Custom GPT and fine-tuning demonstrating their applications in the media industry. Designed hands-on AI sandboxing activities to enhance student engagement and applied learning. Developed custom pipelines for extracting, cleaning, and structuring news and social media data, ensuring high-quality datasets for various media-related studies. Mentored students and media professionals in integrating AI solutions into content creation, newsroom automation, and audience engagement strategies.",
+//           color: "#000000",
+//         },
+//       ],
+//     },
+//     {
+//       title: "Internships",
+//       experiences: [
+//         {
+//           title: "Research Intern",
+//           company: "Computational Intelligence Lab, Indian Institute of Science (IISc)",
+//           company_url: "https://www.iisc.ac.in/",
+//           logo_path: "iisc_logo.png",
+//           duration: "Jun 2023 - Dec 2023",
+//           location: "Bangalore, India",
+//           description:
+//             "Worked on the development of semi-autonomous drone for precision pesticide spraying on tall trees and challenging agricultural environments. Developed an algorithm to dynamically adjust drone height based on real-time depth estimation from the canopy and terrain below the drone, using Intel RealSense cameras, lidar, radar. Tested and deployed computer vision algorithms for image segmentation and object detection suitable for edge computation to detect the plants and efficiently align drones with plants for spraying. Performed extensive simulation of algorithms created using ROS(Python, C++) on Gazebo Simulator.",
+//           color: "#000000",
+//         },
+//         {
+//           title: "Artificial Intelligence Intern",
+//           company: "UMA - Universidad María Auxiliadora",
+//           company_url: "https://www.uma.edu.pe/",
+//           logo_path: "uma_logo.png",
+//           duration: "Mar 2024 - May 2024",
+//           location: "Lima, Peru",
+//           description:
+//             "Worked on the project “Chatbot Queries in the Integrated University Management System at Universidad María Auxiliadora (UMA), Lima” as part of a capstone project collaboration. Developed Conversational AI agent workflow capable of generating responses using queries from university database. Implemented intent and entity recognition, enabling the AI agent to deliver context-aware, personalized responses. Built a student-facing chatbot, providing access to personalized university data (fees, results, library dues, etc.), reducing administrative workload by 40% through automated, real-time responses. Managed end-to-end project coordination, collaborating with a cross-functional team of six students and UMA staff.",
+//           color: "#000000",
+//         },
+//   ],
+// },
+//     {
+//       title: "Leadership",
+//        experiences: [
+//       {
+//         title: "Research Intern",
+//         company: "Computational Intelligence Lab, Indian Institute of Science (IISc)",
+//         company_url: "https://www.iisc.ac.in/",
+//         logo_path: "iisc_logo.png",
+//         duration: "Jun 2023 - Dec 2023",
+//         location: "Bangalore, India",
+//         description:
+//           "Worked on the development of semi-autonomous drone for precision pesticide spraying on tall trees and challenging agricultural environments. Developed an algorithm to dynamically adjust drone height based on real-time depth estimation from the canopy and terrain below the drone, using Intel RealSense cameras, lidar, radar. Tested and deployed computer vision algorithms for image segmentation and object detection suitable for edge computation to detect the plants and efficiently align drones with plants for spraying. Performed extensive simulation of algorithms created using ROS(Python, C++) on Gazebo Simulator.",
+//         color: "#000000",
+//       },
+//     ],
+//     },
+
+//   ],
+// };
+
 const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
@@ -567,141 +539,110 @@ const experience = {
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
       work: true,
+      title: "Work",
+
       experiences: [
         {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - Aug 2021",
-          location: "Hyderabad, Telangana",
-          description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-          color: "#0879bf",
+          title: "Research Assistant",
+          company: "Dependable Autonomy Laboratory, Northeastern University",
+          company_url: "https://www.northeastern.edu/",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "Nov 2024 - Present",
+          location: "Boston, MA",
+          description: [
+            "Conducted a comparative analysis of DDPG, TD3, and PPO reinforcement learning algorithms within the Donkey Car simulator.",
+            "Enhanced algorithm performance by Reward Engineering and developing image encoder-decoder architecture for better feature extraction.",
+            "PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.",
+          ],
+          color: "#000000",
         },
         {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
-          description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-          color: "#9b1578",
-        },
-        {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
-          description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
+          title: "Teaching Assistant- AI Lead",
+          company: "Northeastern University",
+          company_url: "https://www.northeastern.edu/",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "Dec 2024 - Present",
+          location: "Boston, MA",
+          description: [
+            "Course: JRNL 6460 - Artificial Intelligence in Media Industry (AI-MI), Instructor: Prof. John Wihbey.",
+            "Conducted sessions on Prompt engineering, Generative AI models, LLMs Integration, Diffusion models, Custom GPT and fine-tuning demonstrating their applications in the media industry.",
+            "Designed hands-on AI sandboxing activities to enhance student engagement and applied learning.",
+            "Developed custom pipelines for extracting, cleaning, and structuring news and social media data, ensuring high-quality datasets for various media-related studies.",
+            "Mentored students and media professionals in integrating AI solutions into content creation, newsroom automation, and audience engagement strategies.",
+          ],
+          color: "#000000",
         },
       ],
     },
     {
       title: "Internships",
+      internships: true,
       experiences: [
         {
-          title: "Machine Learning Intern",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "May 2022 - Aug 2022",
-          location: "San Francisco, USA",
-          description:
-            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+          title: "Research Intern",
+          company:
+            "Computational Intelligence Lab, Indian Institute of Science (IISc)",
+          company_url: "https://www.iisc.ac.in/",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "Jun 2023 - Dec 2023",
+          location: "Bangalore, India",
+          description: [
+            "Worked on the development of semi-autonomous drone for precision pesticide spraying on tall trees and challenging agricultural environments.",
+            "Developed an algorithm to dynamically adjust drone height based on real-time depth estimation from the canopy and terrain below the drone, using Intel RealSense cameras, lidar, radar.",
+            "Tested and deployed computer vision algorithms for image segmentation and object detection suitable for edge computation to detect the plants and efficiently align drones with plants for spraying.",
+            "Performed extensive simulation of algorithms created using ROS(Python, C++) on Gazebo Simulator.",
+          ],
           color: "#000000",
         },
         {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
+          title: "Artificial Intelligence Intern",
+          company: "UMA - Universidad María Auxiliadora",
+          company_url: "https://www.uma.edu.pe/",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "Mar 2024 - May 2024",
+          location: "Lima, Peru",
+          description: [
+            "Worked on the project “Chatbot Queries in the Integrated University Management System at Universidad María Auxiliadora (UMA), Lima” as part of a capstone project collaboration.",
+            "Developed Conversational AI agent workflow capable of generating responses using queries from university database.",
+            "Implemented intent and entity recognition, enabling the AI agent to deliver context-aware, personalized responses.",
+            "Built a student-facing chatbot, providing access to personalized university data (fees, results, library dues, etc.), reducing administrative workload by 40% through automated, real-time responses.",
+            "Managed end-to-end project coordination, collaborating with a cross-functional team of six students and UMA staff.",
+          ],
+          color: "#000000",
         },
       ],
     },
     {
-      title: "Volunteerships",
+      title: "Leadership",
+      leadership: true,
       experiences: [
         {
-          title: "Google Explore ML Facilitator",
-          company: "Google",
-          company_url: "https://about.google/",
-          logo_path: "google_logo.png",
-          duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
-          color: "#4285F4",
-        },
-        {
-          title: "Microsoft Student Partner",
-          company: "Microsoft",
-          company_url: "https://www.microsoft.com/",
-          logo_path: "microsoft_logo.png",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
-          color: "#D83B01",
-        },
-        {
-          title: "Mozilla Campus Captain",
-          company: "Mozilla",
-          company_url: "https://www.mozilla.org/",
-          logo_path: "mozilla_logo.png",
-          duration: "Oct 2019 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
+          title: "Programming Domain Head",
+          company: "VIIT Robotics",
+          company_url: "",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "Jun 2021 - Nov 2023",
+          location: "Pune, Maharashtra, India",
+          description: [
+            "Managed daily activities of the Programming team (size over 30 students) for various competitions like Robocon, Eyantra, World Robotics Championship and some regional-level competitions.",
+            "Conducted various robotics workshops.",
+            "Achievements: AIR -21 ABU Robocon, IIT Delhi, AIR-15 World Robotics Championship, New Delhi, TOP 50 Eyantra Robotics Competition, IIT Bombay.",
+          ],
           color: "#000000",
         },
         {
-          title: "Developer Students Club Member",
-          company: "DSC IIITDM Kurnool",
-          company_url:
-            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
-          logo_path: "dsc_logo.png",
-          duration: "Jan 2018 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Developer Program Member",
-          company: "Github",
-          company_url: "https://github.com/",
-          logo_path: "github_logo.png",
-          duration: "July 2019 - PRESENT",
-          location: "Work From Home",
-          description:
-            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-          color: "#181717",
+          title: "Technical Head",
+          company: "IoT Forum VIIT",
+          company_url: "",
+          logo_path: require("./assests/images/donkeycar.png"),
+          duration: "May 2022 - Nov 2023",
+          location: "Pune, Maharashtra, India",
+          description: [
+            "Given a session on 'Automation of Physics Experiments using Advanced Technologies' to Physics teachers from all over Maharashtra under the guidance of Dr.Rohini Panajkar.",
+            "Conducted tech workshop 'Exploring the world of IoT' for students in domains of IoT, Robotics, AI, and ML with the participation of over 200 students.",
+          ],
+          color: "#000000",
         },
       ],
     },
@@ -805,6 +746,7 @@ export {
   greeting,
   socialMediaLinks,
   skills,
+  projects,
   competitiveSites,
   degrees,
   certifications,

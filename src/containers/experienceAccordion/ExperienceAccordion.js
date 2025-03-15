@@ -1,51 +1,50 @@
 import React, { Component } from "react";
-import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
+import ExperienceSection from "./ExperienceSection";
 import "./ExperienceAccordion.css";
-import { Accordion, Panel } from "baseui/accordion";
+import workImage from "../../assests/images/donkeycar.png"; // Add your work image here
+import internshipImage from "../../assests/images/donkeycar.png"; // Add your internship image here
+import leadershipImage from "../../assests/images/donkeycar.png"; // Add your leadership image here
+import { experience } from "../../portfolio";
+
+import ExperienceSectionWrapper from "./ExperienceSectionWrapper";
 
 class ExperienceAccordion extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div className="experience-accord">
-        <Accordion>
-          {this.props.sections.map((section) => {
-            return (
-              <Panel
-                className="accord-panel"
-                title={section["title"]}
-                key={section["title"]}
-                overrides={{
-                  Header: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                      border: `1px solid`,
-                      borderRadius: `5px`,
-                      borderColor: `${theme.headerColor}`,
-                      marginBottom: `3px`,
-                      fontFamily: "Google Sans Regular",
-                      color: `${theme.text}`,
-                      ":hover": {
-                        color: `${theme.secondaryText}`,
-                      },
-                    }),
-                  },
-                  Content: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                    }),
-                  },
-                }}
-              >
-{section["experiences"].map((experience,index) => {
-                  return (
-                    <ExperienceCard index={index} totalCards={section["experiences"].length} experience={experience} theme={theme} />
-                  );
-                })}
-              </Panel>
-            );
-          })}
-        </Accordion>
+      <div className="experience">
+        <div className="experience-section">
+          <div className="experience-left">
+            <img src={workImage} alt="Work" className="experience-image" />
+          </div>
+          <div className="experience-right">
+            <ExperienceSection section={experience.sections[0]} theme={theme} />
+          </div>
+        </div>
+        <div className="experience-section">
+          <div className="experience-left">
+            <img
+              src={internshipImage}
+              alt="Internships"
+              className="experience-image"
+            />
+          </div>
+          <div className="experience-right">
+            <ExperienceSection section={experience.sections[1]} theme={theme} />
+          </div>
+        </div>
+        <div className="experience-section">
+          <div className="experience-left">
+            <img
+              src={leadershipImage}
+              alt="Leadership"
+              className="experience-image"
+            />
+          </div>
+          <div className="experience-right">
+            <ExperienceSection section={experience.sections[2]} theme={theme} />
+          </div>
+        </div>
       </div>
     );
   }
