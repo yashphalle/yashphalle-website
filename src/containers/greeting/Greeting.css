@@ -44,17 +44,14 @@
 }
 
 .greeting-text-p {
-  font-size: 40px;
+  font-size: 1.5em;
   line-height: 40px;
   margin-right: 40px;
   font-family: "Google Sans Medium";
 }
 
 .greeting-image-div > * {
-  
   height: auto;
- 
-  
 }
 
 /* Media Query */
@@ -63,7 +60,7 @@
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -80,11 +77,15 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 30px;
     margin-right: 0px;
     line-height: normal;
     text-align: center;
   }
+  .greeting-text-p subTitle {
+    font-size: 20px;
+  }
+
   .greeting-main {
     display: block;
   }

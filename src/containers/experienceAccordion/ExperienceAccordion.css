@@ -1,13 +1,29 @@
-.experience-accord {
-  margin: 50px;
+.experience-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  /* text-align: center; */
 }
 
-.accord-panel {
-  font-family: "Google Sans Regular";
+.experience-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
-  .experience-accord {
-    margin: 20px;
-  }
+.experience-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.experience-right {
+  flex: 2;
+}
+
+.experience-image {
+  width: 100%;
+  height: 400px; /* Set a fixed height */
+  /* Ensure the image covers the entire area */
+  border-radius: 10px;
 }

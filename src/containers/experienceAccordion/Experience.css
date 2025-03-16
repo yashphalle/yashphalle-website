@@ -1,62 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap");
+
 .experience-heading {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.experience-section {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.experience-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.experience-right {
-  flex: 2;
-}
-
-.experience-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif;
 }
 
 .experience-card {
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 25px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-item {
-  margin-bottom: 20px;
+.experience-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .experience-header {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .experience-logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border: 2px solid #e0e0e0;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
 }
 
-.experience-details {
-  flex-grow: 1;
+.experience-info {
+  flex: 1;
+}
+
+.experience-role {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 5px;
 }
 
 .experience-company a {
-  color: #007bff;
+  color: #2575fc;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -66,36 +61,21 @@
 
 .experience-location,
 .experience-duration {
-  font-size: 0.9em;
-  color: #666666;
+  font-size: 0.95em;
+  color: #777777;
 }
 
-.experience-card .card-title {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #333333;
-}
-
-.experience-card .card-subtitle {
-  font-size: 1.4em;
-  margin-bottom: 10px;
+.experience-description {
+  font-size: 1.05em;
   color: #555555;
+  line-height: 1.6;
 }
 
-.experience-card .card-text {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-  color: #666666;
-}
-
-.experience-card .card-text ul {
+.experience-description ul {
   padding-left: 20px;
+  list-style: disc;
 }
 
-.experience-card .card-text ul li {
-  margin-bottom: 10px;
-}
-
-.experience-card .card-text p {
+.experience-description ul li {
   margin-bottom: 10px;
 }

@@ -1,6 +1,3 @@
-/* Change this file to get your personal Porfolio */
-import donkeycar from "./assests/images/donkeycar.png";
-// Website related settings
 const settings = {
   isSplash: false, // Change this to false if you don't want Splash screen.
 };
@@ -216,7 +213,7 @@ const projects = {
         ● PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.
       `,
       thumbnail: require("./assests/images/donkeycar.png"),
-      githubLink: "https://github.com/yourusername/project1",
+      githubLink: "https://github.com/yashphalle/donkey-car-RL",
     },
     {
       title: "Lidar-based SLAM and Autonomous Path Planning for Mobile Robot",
@@ -225,8 +222,9 @@ const projects = {
         ● Developed autonomous path planning algorithms, incorporating A*(A-star) and Dijkstra’s algorithms to optimize route efficiency and enhance obstacle avoidance capabilities.
         ● Tech Stack - Python, ROS, Gazebo simulation, NVIDIA Jetson Nano
       `,
-      thumbnail: require("./assests/images/donkeycar.png"),
-      githubLink: "https://github.com/yourusername/project2",
+      thumbnail: require("./assests/images/proj2.png"),
+      githubLink:
+        "https://github.com/yashphalle/Eyantra-sentinel-drone-sd_1852",
     },
     {
       title: "Sentinel Drone",
@@ -235,8 +233,9 @@ const projects = {
         ● Implemented Image processing, feature matching, and path planning algorithms in ROS.
         ● Tech Stack- Python- ROS, Pytorch, OpenCV, QGIS
       `,
-      thumbnail: require("./assests/images/donkeycar.png"),
-      githubLink: "https://github.com/yourusername/project3",
+      thumbnail: require("./assests/images/proj3.jpg"),
+      githubLink:
+        "https://github.com/yashphalle/2D-Lidar-based-SLAM-and-Autonomous-Path-Planning-for-TurtleBot",
     },
     {
       title:
@@ -246,8 +245,8 @@ const projects = {
         ● Optimized the system for edge computing, reducing model size while maintaining high accuracy.
         ● Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.
       `,
-      thumbnail: require("./assests/images/donkeycar.png"),
-      githubLink: "https://github.com/yourusername/project4",
+      thumbnail: require("./assests/images/proj4.png"),
+      githubLink: "https://yashphalle.github.io/yashphalle-website/#/",
     },
   ],
 };
@@ -547,21 +546,22 @@ const experience = {
           title: "Research Assistant",
           company: "Dependable Autonomy Laboratory, Northeastern University",
           company_url: "https://www.northeastern.edu/",
-          logo_path: require("./assests/images/donkeycar.png"),
+          logo_path: require("./assests/images/neu-logo.png"),
           duration: "Nov 2024 - Present",
           location: "Boston, MA",
           description: [
-            "Conducted a comparative analysis of DDPG, TD3, and PPO reinforcement learning algorithms within the Donkey Car simulator.",
-            "Enhanced algorithm performance by Reward Engineering and developing image encoder-decoder architecture for better feature extraction.",
-            "PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.",
+            "Conducting research on Real-Time Hybrid Control for Obstacle Avoidance in Autonomous Robots/Drones Using Visual Language Models (VLMs) and exploring Safe Reinforcement Learning.",
+            "Integrated state-of-the-art reinforcement learning algorithms for robots with ROS and Gazebo simulations.",
           ],
           color: "#000000",
         },
         {
           title: "Teaching Assistant- AI Lead",
-          company: "Northeastern University",
-          company_url: "https://www.northeastern.edu/",
-          logo_path: require("./assests/images/donkeycar.png"),
+          company:
+            "College of Arts, Media and Design (CAMD) at Northeastern University",
+          company_url:
+            "https://camd.northeastern.edu/research/initiatives/aims/",
+          logo_path: require("./assests/images/camd.png"),
           duration: "Dec 2024 - Present",
           location: "Boston, MA",
           description: [
@@ -584,7 +584,7 @@ const experience = {
           company:
             "Computational Intelligence Lab, Indian Institute of Science (IISc)",
           company_url: "https://www.iisc.ac.in/",
-          logo_path: require("./assests/images/donkeycar.png"),
+          logo_path: require("./assests/images/iisc.png"),
           duration: "Jun 2023 - Dec 2023",
           location: "Bangalore, India",
           description: [
@@ -599,7 +599,7 @@ const experience = {
           title: "Artificial Intelligence Intern",
           company: "UMA - Universidad María Auxiliadora",
           company_url: "https://www.uma.edu.pe/",
-          logo_path: require("./assests/images/donkeycar.png"),
+          logo_path: require("./assests/images/uma.jpeg"),
           duration: "Mar 2024 - May 2024",
           location: "Lima, Peru",
           description: [
@@ -620,8 +620,9 @@ const experience = {
         {
           title: "Programming Domain Head",
           company: "VIIT Robotics",
-          company_url: "",
-          logo_path: require("./assests/images/donkeycar.png"),
+          company_url:
+            "https://www.linkedin.com/company/viitrobotics/posts/?feedView=all",
+          logo_path: require("./assests/images/vrc.jpeg"),
           duration: "Jun 2021 - Nov 2023",
           location: "Pune, Maharashtra, India",
           description: [
@@ -634,8 +635,9 @@ const experience = {
         {
           title: "Technical Head",
           company: "IoT Forum VIIT",
-          company_url: "",
-          logo_path: require("./assests/images/donkeycar.png"),
+          company_url:
+            "https://www.linkedin.com/company/iotforumviit/posts/?feedView=all",
+          logo_path: require("./assests/images/iot.jpeg"),
           duration: "May 2022 - Nov 2023",
           location: "Pune, Maharashtra, India",
           description: [
