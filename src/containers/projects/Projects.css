@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap");
 
+/* Section Styling */
 .project-section {
   padding: 60px 0;
   background: linear-gradient(135deg, #d2dcf7, #b0c9ef);
 }
 
+/* Heading */
 .projects-heading {
   font-size: 3em;
   margin-bottom: 50px;
@@ -13,17 +15,18 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Card */
 .project-card {
-  margin: 20px;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
   border: none;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  margin: 20px;
 }
 
 .project-card:hover {
@@ -31,11 +34,20 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Image */
 .project-image {
   height: 220px;
   object-fit: cover;
 }
 
+/* Card Body with Flex */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Title */
 .project-title {
   font-size: 1.8em;
   margin-bottom: 15px;
@@ -44,28 +56,26 @@
   font-weight: 500;
 }
 
+/* Description */
 .project-description {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.5;
-  margin-bottom: 25px;
   color: #555555;
   font-family: "Open Sans", sans-serif;
-  flex-grow: 1;
+  flex-grow: 1; /* Pushes the button down */
+  margin-bottom: 20px;
 }
 
-.project-button-container {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  margin-top: auto;
-}
-
+/* Button */
 .project-button {
+  align-self: center;
   border-radius: 25px;
   font-family: "Roboto", sans-serif;
   padding: 10px 20px;
   background: linear-gradient(135deg, #d0a5ff, #5291ff);
   border: none;
+  color: white;
+  font-weight: 500;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 

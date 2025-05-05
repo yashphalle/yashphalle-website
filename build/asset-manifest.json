@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.54906197.css",
-    "main.js": "./static/js/main.5f3ecae8.js",
+    "main.css": "./static/css/main.eaea847e.css",
+    "main.js": "./static/js/main.1218b0b7.js",
     "static/media/lead2.jpg": "./static/media/lead2.543ed07d2a60c59b8c68.jpg",
     "static/media/lead1.jpg": "./static/media/lead1.69c9f3382b0264443ea2.jpg",
+    "static/media/summit.jpg": "./static/media/summit.70aa2787eeb0eae139f9.jpg",
     "static/media/lib1.jpg": "./static/media/lib1.73816c9d920801bcf09d.jpg",
     "static/media/lib2.jpg": "./static/media/lib2.4d08cda67cc25b4dff41.jpg",
+    "static/media/ROS2.jpg": "./static/media/ROS2.9b962884123087986114.jpg",
     "static/media/intern2.jpg": "./static/media/intern2.8489ca1d31ff8fddd44b.jpg",
     "static/media/Drone_small.jpg": "./static/media/Drone_small.b869fa7086be88acc87a.jpg",
     "static/media/lead4.jpg": "./static/media/lead4.c497806dd0521250b172.jpg",
@@ -20,6 +22,7 @@
     "static/media/fa-brands-400.svg": "./static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/comp1.jpg": "./static/media/comp1.fb06bd480443b8d15fcc.jpg",
     "static/media/home1.jpg": "./static/media/home1.7cb844f59fe0f9b17310.jpg",
+    "static/media/cheetah-rl.png": "./static/media/cheetah-rl.9bdb388001f8300255e2.png",
     "static/media/profile-pic (5).png": "./static/media/profile-pic (5).cbf9a35f4b28463b4077.png",
     "static/media/profile-pic (3).png": "./static/media/profile-pic (3).d7982d210b6f04bd3b30.png",
     "static/media/profile-pic.png": "./static/media/profile-pic.e690b2f6c10ad5a93d47.png",
@@ -46,10 +49,12 @@
     "static/media/yale.jpeg": "./static/media/yale.3b945cacd03e030a7b33.jpeg",
     "static/media/fa-brands-400.woff": "./static/media/fa-brands-400.dc957891d535aa198135.woff",
     "static/media/proj4.png": "./static/media/proj4.508269defce24249dde6.png",
+    "static/media/summit2.jpeg": "./static/media/summit2.65edf8223fabcc88bc00.jpeg",
     "static/media/fa-solid-900.woff2": "./static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "./static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
     "static/media/eyantra.jpeg": "./static/media/eyantra.d66eaa4d990dc908b4c5.jpeg",
     "static/media/iisc.png": "./static/media/iisc.5f5002048e7739783a05.png",
+    "static/media/lingo.png": "./static/media/lingo.99d67c818e554d8257e0.png",
     "static/media/proj3.jpg": "./static/media/proj3.71cc2b22ebaab74e6f6b.jpg",
     "static/media/ros.webp": "./static/media/ros.66ff803d62b2fce5f10c.webp",
     "static/media/fa-regular-400.eot": "./static/media/fa-regular-400.86ce78132c18df414d83.eot",
@@ -60,11 +65,11 @@
     "static/media/python-logo-only.svg": "./static/media/python-logo-only.002d9ebee5fb844fc9f3.svg",
     "static/media/Ros_logo.svg": "./static/media/Ros_logo.0638d0fd8a6a07981c7c.svg",
     "index.html": "./index.html",
-    "main.54906197.css.map": "./static/css/main.54906197.css.map",
-    "main.5f3ecae8.js.map": "./static/js/main.5f3ecae8.js.map"
+    "main.eaea847e.css.map": "./static/css/main.eaea847e.css.map",
+    "main.1218b0b7.js.map": "./static/js/main.1218b0b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.54906197.css",
-    "static/js/main.5f3ecae8.js"
+    "static/css/main.eaea847e.css",
+    "static/js/main.1218b0b7.js"
   ]
 }

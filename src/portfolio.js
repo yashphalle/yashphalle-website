@@ -216,15 +216,51 @@ const projects = {
       githubLink: "https://github.com/yashphalle/donkey-car-RL",
     },
     {
-      title: "Lidar-based SLAM and Autonomous Path Planning for Mobile Robot",
+      title: "MapNGo",
       description: `
-        ● Designed and implemented a 2D Lidar-based SLAM (Simultaneous Localization and Mapping) system to enable precise navigation and mapping by a mobile robot in dynamic environments.
-        ● Developed autonomous path planning algorithms, incorporating A*(A-star) and Dijkstra’s algorithms to optimize route efficiency and enhance obstacle avoidance capabilities.
-        ● Tech Stack - Python, ROS, Gazebo simulation, NVIDIA Jetson Nano
+      ● Developed an ROS package in C++ for A*, Dijkstra, and RRT based path planning algorithms for autonomous navigation
+        using SLAM-generated occupancy grid maps.
+      ● Integrated path planning with a path following controller for autonomous mobile robot operation (tested on TurtleBot3).
+      ● Containerized the entire ROS system using Docker, enabling simplified deployment process across different environments.
       `,
       thumbnail: require("./assests/images/proj2.png"),
       githubLink:
-        "https://github.com/yashphalle/Eyantra-sentinel-drone-sd_1852",
+        "https://github.com/yashphalle/MapNGo-Simultaneous-Localization-Mapping-and-Optimized-Path-Planning",
+    },
+    {
+      title: "LingoROS",
+      description: `
+      ● Developing an open-source ROS package in Python for providing natural language control interface connecting LLMs to
+          existing robots without modifying existing robot codebases
+      ● Implemented a hybrid system with automatic ROS topic discovery and Ollama/phi3 integration, converting natural
+          language commands into structured JSON for robotic execution
+      ● Optimized LLM inference for low-latency onboard computation, enabling real-time processing of user commands on
+        resource-constrained robotic platform.
+      `,
+      thumbnail: require("./assests/images/lingo.png"),
+      githubLink: "https://github.com/yashphalle/LingoROS",
+    },
+    {
+      title: "Enhancing Robotic Locomotion in Half Cheetah Using RL",
+      description: `
+      ● Implemented and compared PPO (on-policy) and DDPG (off-policy) reinforcement learning algorithms in the OpenAI Half-Cheetah mujoco environment, demonstrating that DDPG achieved 5x higher rewards despite requiring more computational resources.
+      ● Developed custom biomechanically-inspired reward functions that significantly improved locomotion efficiency and prevented undesirable behaviors (e.g., inverted movement), leading to greater forward distance traveled during training episodes.
+      ● Conducted systematic hyperparameter optimization using Optuna across 40+ trials, experimenting with varying neural network architectures (1-3 hidden layers) to identify optimal configurations for both algorithms.
+      `,
+      thumbnail: require("./assests/images/cheetah-rl.png"),
+      githubLink: "https://github.com/yashphalle/Half-Cheetah-RL-Project",
+    },
+
+    {
+      title:
+        "Safe Landing Spot Detection For UAVs Using Deep Learning Algorithms Suitable for Energy-Constrained Computing",
+      description: `
+        ● Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.
+        ● Optimized the system for edge computing, reducing model size while maintaining high accuracy.
+        ● Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.
+      `,
+      thumbnail: require("./assests/images/proj4.png"),
+      githubLink: "https://yashphalle.github.io/yashphalle-website/#/",
     },
     {
       title: "Sentinel Drone",
@@ -236,17 +272,6 @@ const projects = {
       thumbnail: require("./assests/images/proj3.jpg"),
       githubLink:
         "https://github.com/yashphalle/2D-Lidar-based-SLAM-and-Autonomous-Path-Planning-for-TurtleBot",
-    },
-    {
-      title:
-        "Safe Landing Spot Detection For UAVs Using Deep Learning Algorithms Suitable for Energy-Constrained Computing",
-      description: `
-        ● Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.
-        ● Optimized the system for edge computing, reducing model size while maintaining high accuracy.
-        ● Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.
-      `,
-      thumbnail: require("./assests/images/proj4.png"),
-      githubLink: "https://yashphalle.github.io/yashphalle-website/#/",
     },
   ],
 };

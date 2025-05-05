@@ -6,6 +6,7 @@ import achievementImage1 from "../../assests/images/yale.jpeg"; // Add your achi
 import achievementImage2 from "../../assests/images/harvard.jpeg";
 import achievementImage3 from "../../assests/images/eyantra.jpeg";
 import achievementImage4 from "../../assests/images/iisc-win.jpg";
+import achievementImage5 from "../../assests/images/summit.jpg";
 export default function Achievement() {
   return (
     <div className="main" id="achievements">
@@ -65,6 +66,16 @@ export default function Achievement() {
               />
               <div className="achievement-description">
                 <h3>Top 15 in Eyantra Competition by IIT,Bombay</h3>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={achievementImage5}
+                alt="Achievement 3"
+                className="achievement-image"
+              />
+              <div className="achievement-description">
+                <h3>Attented Robotics Summit & Expo, Boston</h3>
               </div>
             </Carousel.Item>
           </Carousel>
