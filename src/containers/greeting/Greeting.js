@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import teslaLogo from "../../assests/images/tesla.png";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -25,12 +26,38 @@ export default function Greeting(props) {
                   ( Website Under Progress )
                 </h2>
               )}
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {greeting.subTitle}
-              </p>
+              <div className="professional-subtitle">
+                <div className="subtitle-line">
+                  <span className="machine-vision-text">
+                    Machine Vision Intern
+                  </span>
+                  <span className="role-separator"> - </span>
+                  <span className="tesla-bold">Tesla</span>
+                  <img src={teslaLogo} alt="Tesla" className="company-logo" />
+                </div>
+                <div className="subtitle-line">
+                  <span className="ms-ai-text">MS AI</span>
+                  <span className="role-separator"> - </span>
+                  <span className="neu-bold">NEU</span>
+                  <span className="emoji"></span>
+                  <span className="pipe-separator"> | </span>
+                  <span className="ai-robotics">AI+Robotics</span>
+                  <span className="emoji"></span>
+                </div>
+                <div className="subtitle-line">
+                  <span className="research-text">Research Assistant</span>
+                  <span className="role-separator"> - </span>
+                  <span className="dal-bold">
+                    Dependable Autonomy Lab (DAL)
+                  </span>
+                </div>
+                <div className="subtitle-line">
+                  <span className="research-text">Research Intern</span>
+                  <span className="role-separator"> - </span>
+                  <span className="iisc-bold">IISc Bangalore</span>
+                  <span className="emoji"></span>
+                </div>
+              </div>
               <SocialMedia theme={theme} />
             </div>
           </div>

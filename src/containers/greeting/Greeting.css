@@ -96,3 +96,112 @@
     justify-content: center;
   }
 }
+
+/* Professional Gradient Text Theme for Greeting Component */
+.professional-subtitle {
+  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.subtitle-line {
+  margin: 0.1rem 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  padding: 0.3rem 0;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.subtitle-line:hover {
+  transform: translateX(8px);
+}
+
+/* Machine Vision Intern - Electric blue gradient text */
+.machine-vision-text {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* MS AI - Academic purple gradient text */
+.ms-ai-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* Research roles - Deep teal gradient text */
+.research-text {
+  background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* AI+Robotics - Tech pink gradient text */
+.ai-robotics {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* Company names - Dark colors */
+.tesla-bold,
+.neu-bold,
+.dal-bold,
+.iisc-bold {
+  color: #2c3e50;
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+}
+
+.role-separator {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+  filter: none;
+}
+
+.company-logo {
+  height: 1.2em;
+  width: auto;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  filter: none;
+}
+
+/* Fallback for browsers that don't support gradient text */
+@supports not (-webkit-background-clip: text) {
+  .machine-vision-text,
+  .ms-ai-text,
+  .research-text,
+  .ai-robotics {
+    -webkit-text-fill-color: initial;
+    color: #2c3e50;
+  }
+}
+
+/* Simple gray separator for the | line */
+.pipe-separator {
+  color: #9ca3af;
+  font-weight: normal;
+  margin: 0 0.5rem;
+}

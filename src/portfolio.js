@@ -19,7 +19,7 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-    "🎓MS AI @NEU | AI+Robotics🤖 | Research Assistant @Dependable Autonomy Lab (DAL) | Research Intern @IISc Bangalore",
+    "🎓 MS AI Student at Northeastern University | 🤖 AI+Robotics Researcher | 🚗 Machine Vision Intern at Tesla | � Research Assistant at Dependable Autonomy Lab | 🌟 Research Intern at IISc Bangalore",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
 };
@@ -605,6 +605,26 @@ const experience = {
       internships: true,
       experiences: [
         {
+          title: "Machine Vision Software Development Intern",
+          company: "Tesla",
+          company_url: "https://www.tesla.com/",
+          logo_path: require("./assests/images/tesla.png"),
+          duration: "Jun 2025 - Sep 2025",
+          location: "Austin, Texas, United States",
+          description: [],
+          color: "#CC0000",
+        },
+        {
+          title: "Robotics Intern",
+          company: "Warp",
+          company_url: "https://www.wearewarp.com/",
+          logo_path: require("./assests/images/warp.png"),
+          duration: "Jun 2025 - Sep 2025",
+          location: "Los Angeles, California, United States",
+          color: "#6366F1",
+          description: [],
+        },
+        {
           title: "Research Intern",
           company:
             "Computational Intelligence Lab, Indian Institute of Science (IISc)",
@@ -736,6 +756,35 @@ const publications = {
   ],
 };
 
+// Blogs Section
+const blogSection = {
+  title: "Blogs",
+  subtitle: "My thoughts and experiences in AI, Robotics, and Technology",
+  blogs: [
+    {
+      url: "https://medium.com/@yashphalle/ai-in-robotics",
+      image: require("./assests/images/proj2.png"),
+      title: "The Future of AI in Robotics",
+      description:
+        "Exploring how artificial intelligence is revolutionizing the field of robotics and autonomous systems.",
+    },
+    {
+      url: "https://medium.com/@yashphalle/computer-vision-drones",
+      image: require("./assests/images/proj3.jpg"),
+      title: "Computer Vision for Autonomous Drones",
+      description:
+        "Deep dive into computer vision algorithms that enable drones to navigate and perform tasks autonomously.",
+    },
+    {
+      url: "https://medium.com/@yashphalle/reinforcement-learning",
+      image: require("./assests/images/proj4.png"),
+      title: "Reinforcement Learning in Real-World Applications",
+      description:
+        "How reinforcement learning is being applied to solve complex real-world problems in robotics and automation.",
+    },
+  ],
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -781,5 +830,6 @@ export {
   projectsHeader,
   publicationsHeader,
   publications,
+  blogSection,
   contactPageData,
 };
