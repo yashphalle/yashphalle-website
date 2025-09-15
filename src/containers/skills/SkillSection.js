@@ -22,13 +22,24 @@ class SkillSection extends Component {
 
                 <Fade right duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
+                    {skill.skills.map((skillItem, index) => {
                       return (
                         <p
+                          key={index}
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
                         >
-                          {skillSentence}
+                          <span className="skill-emoji">
+                            {skillItem.title.split(" ")[0]}
+                          </span>
+                          <span className="skill-title-text">
+                            {" "}
+                            {skillItem.title.split(" ").slice(1).join(" ")}
+                          </span>
+                          <span className="skill-content">
+                            {" "}
+                            {skillItem.content}
+                          </span>
                         </p>
                       );
                     })}

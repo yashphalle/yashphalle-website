@@ -58,11 +58,30 @@ const skills = {
       // #title sections
       title: "Interests & Skills",
       skills: [
-        "🔍 Areas: Computer Vision, Reinforcement Learning, Robotics, Edge Computing, IoT",
-        "💻 Programming Languages: Python, C++",
-        "🛠️ Framework and Tools: ROS2, ROS, Gazebo, PyTorch, TensorFlow, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git",
-        "🔧 Hardware Experience: Nvidia Jetson Nano, Raspberry Pi, Drone - Pixhawk Px4",
-        "🌐 Software Development: Web Development [MongoDb, Express.Js, React.js, Node Js] (MERN) Stack",
+        {
+          title: "🔍 Areas:",
+          content:
+            "Computer Vision, Robotics, Reinforcement Learning, Edge Computing",
+        },
+        {
+          title: "💻 Programming Languages:",
+          content: "C++, Python",
+        },
+        {
+          title: "🛠️ Framework and Tools:",
+          content:
+            "ROS2, ROS, Gazebo, PyTorch, TensorFlow, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git",
+        },
+        {
+          title: "🔧 Hardware Experience:",
+          content:
+            "Nvidia Jetson Nano, Raspberry Pi, Drone - Pixhawk Px4, Perception - 3D/2D Cameras, Lidar, Radar",
+        },
+        {
+          title: "🌐 Software Development:",
+          content:
+            "Web Development [MongoDb, Express.Js, React.js, Node Js] (MERN) Stack",
+        },
       ],
       //logo images here
       softwareSkills: [
@@ -618,7 +637,7 @@ const experience = {
           title: "Robotics Intern",
           company: "Warp",
           company_url: "https://www.wearewarp.com/",
-          logo_path: require("./assests/images/warp.png"),
+          logo_path: require("./assests/images/warp.jpg"),
           duration: "Jun 2025 - Sep 2025",
           location: "Los Angeles, California, United States",
           color: "#6366F1",

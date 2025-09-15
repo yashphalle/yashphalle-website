@@ -83,14 +83,35 @@
   }
 }
 .carousel-container {
-  width: 500px;  /* Set the width of the carousel */
+  width: 500px; /* Set the width of the carousel */
   height: 500px; /* Set the height of the carousel */
   overflow: hidden;
   position: relative;
 }
 .carousel-container img {
-  width: 100%;    /* Makes the image take up the full width of the container */
-  height: 100%;   /* Makes the image take up the full height of the container */
+  width: 100%; /* Makes the image take up the full width of the container */
+  height: 100%; /* Makes the image take up the full height of the container */
   object-fit: cover; /* This will ensure the image covers the area without stretching */
   display: block;
+}
+
+/* Style for emojis - keep natural colors */
+.skill-emoji {
+  font-weight: bold;
+  /* No gradient applied - emojis keep their natural colors */
+}
+
+/* Style for skill title text - bold with gradient */
+.skill-title-text {
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Style for skill content - normal weight with grey color */
+.skill-content {
+  font-weight: normal;
+  color: #666666;
 }

@@ -1,0 +1,22 @@
+﻿      skills: [
+        {
+          heading: " Areas:",
+          content: "Computer Vision, Reinforcement Learning, Robotics, Edge Computing, IoT"
+        },
+        {
+          heading: " Programming Languages:",
+          content: "Python, C++"
+        },
+        {
+          heading: " Framework and Tools:",
+          content: "ROS2, ROS, Gazebo, PyTorch, TensorFlow, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git"
+        },
+        {
+          heading: " Hardware Experience:",
+          content: "Nvidia Jetson Nano, Raspberry Pi, Drone - Pixhawk Px4"
+        },
+        {
+          heading: " Software Development:",
+          content: "Web Development [MongoDb, Express.Js, React.js, Node Js] (MERN) Stack"
+        },
+      ],
