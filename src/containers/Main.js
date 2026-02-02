@@ -7,6 +7,7 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import ProjectDetail from "../pages/projectDetail/ProjectDetail";
 import Blogs from "../pages/blogs/BlogsComponent";
 import Gallery from "../pages/gallery/GalleryComponent";
 import { settings } from "../portfolio.js";
@@ -65,6 +66,12 @@ export default class Main extends Component {
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/project/:slug"
+                render={(props) => (
+                  <ProjectDetail {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -129,6 +136,12 @@ export default class Main extends Component {
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/project/:slug"
+                render={(props) => (
+                  <ProjectDetail {...props} theme={this.props.theme} />
                 )}
               />
               <Route

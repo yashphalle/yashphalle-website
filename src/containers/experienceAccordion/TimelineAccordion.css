@@ -1,0 +1,239 @@
+.timeline-accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.timeline-accordion-section {
+  margin-bottom: 3rem;
+}
+
+.timeline-accordion-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Google Sans Regular", sans-serif;
+  margin-bottom: 0.25rem;
+  text-align: left;
+  color: #333;
+}
+
+.timeline-accordion-section-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.timeline-accordion-list {
+  padding-left: 0;
+  position: relative;
+}
+
+/* Single continuous vertical line behind the dots */
+.timeline-accordion-list::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 7px;
+  bottom: 7px;
+  width: 2px;
+  background: #0e6ba8;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.timeline-accordion-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-accordion-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Hollow circle on the line */
+.timeline-accordion-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #0e6ba8;
+  background-color: #fff;
+  flex-shrink: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Line between dots – hidden when using list::before as single continuous line */
+.timeline-accordion-line {
+  width: 2px;
+  flex: 1;
+  min-height: 28px;
+  margin-top: 2px;
+  background: transparent;
+  opacity: 0;
+}
+
+.timeline-accordion-card-wrap {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  padding-bottom: 1rem;
+  overflow: visible;
+}
+
+.timeline-accordion-card {
+  border-radius: 12px;
+  border: 1px solid rgba(14, 107, 168, 0.12);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-accordion-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-accordion-trigger {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font: inherit;
+}
+
+.timeline-accordion-trigger-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.timeline-accordion-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 107, 168, 0.15);
+}
+
+.timeline-accordion-meta {
+  min-width: 0;
+}
+
+.timeline-accordion-title {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Google Sans Regular", sans-serif;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+  color: #333;
+}
+
+.timeline-accordion-company {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0e6ba8;
+}
+
+.timeline-accordion-company:hover {
+  text-decoration: underline;
+}
+
+.timeline-accordion-duration {
+  font-size: 0.8rem;
+  margin: 0.2rem 0 0 0;
+  color: #6b7280;
+}
+
+.timeline-accordion-chevron {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.timeline-accordion-chevron.open {
+  transform: rotate(180deg);
+}
+
+.timeline-accordion-body {
+  padding: 0 1.25rem 1rem;
+  border-top: 1px solid rgba(14, 107, 168, 0.15);
+}
+
+.timeline-accordion-description {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.timeline-accordion-description li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-accordion-description li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline-accordion-item {
+    gap: 0.75rem;
+  }
+
+  .timeline-accordion-section-title {
+    font-size: 1.4rem;
+  }
+
+  .timeline-accordion-trigger {
+    padding: 0.9rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .timeline-accordion-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-accordion-title {
+    font-size: 0.95rem;
+  }
+
+  .timeline-accordion-company {
+    white-space: normal;
+  }
+
+  .timeline-accordion-body {
+    padding: 0 1rem 0.9rem;
+  }
+
+  .timeline-accordion-description {
+    padding-left: 1rem;
+  }
+}

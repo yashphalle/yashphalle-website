@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.f7231411.css",
-    "main.js": "./static/js/main.b192f882.js",
+    "main.js": "./static/js/main.bf7adc6e.js",
     "static/media/lead2.jpg": "./static/media/lead2.543ed07d2a60c59b8c68.jpg",
     "static/media/lead1.jpg": "./static/media/lead1.69c9f3382b0264443ea2.jpg",
     "static/media/summit.jpg": "./static/media/summit.70aa2787eeb0eae139f9.jpg",
@@ -67,10 +67,10 @@
     "static/media/Ros_logo.svg": "./static/media/Ros_logo.0638d0fd8a6a07981c7c.svg",
     "index.html": "./index.html",
     "main.f7231411.css.map": "./static/css/main.f7231411.css.map",
-    "main.b192f882.js.map": "./static/js/main.b192f882.js.map"
+    "main.bf7adc6e.js.map": "./static/js/main.bf7adc6e.js.map"
   },
   "entrypoints": [
     "static/css/main.f7231411.css",
-    "static/js/main.b192f882.js"
+    "static/js/main.bf7adc6e.js"
   ]
 }

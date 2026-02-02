@@ -56,7 +56,7 @@ const skills = {
   data: [
     {
       // #title sections
-      title: "Interests & Skills",
+      title: "Skills & Research Interests",
       skills: [
         {
           title: "🔍 Areas:",
@@ -70,17 +70,40 @@ const skills = {
         {
           title: "🛠️ Framework and Tools:",
           content:
-            "ROS2, ROS, Gazebo, PyTorch, TensorFlow, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git",
+            "ROS2, ROS, Gazebo, PyTorch, TensorFlow, Halcon, Nvidia CUDA, Docker, CI/CD, Bash, CMake, Git",
         },
         {
           title: "🔧 Hardware Experience:",
-          content:
-            "Nvidia Jetson Nano, Raspberry Pi, Drone - Pixhawk Px4, Perception - 3D/2D Cameras, Lidar, Radar",
+          subGroups: [
+            {
+              label: "Boards",
+              items: ["Nvidia Jetson Nano", "Raspberry Pi", "Microcontrollers"],
+            },
+            {
+              label: "Robots",
+              items: [
+                "Autonomous Industrial Forklift",
+                "Quadruped",
+                "TurtleBot",
+                "AMR",
+                "Drone - Pixhawk PX4",
+              ],
+            },
+            {
+              label: "Sensors",
+              items: [
+                "Cameras (Stereo Depth, ToF, High-FPS Machine Vision)",
+                "Profilers",
+                "GPS",
+                "Lidar",
+                "Radar",
+              ],
+            },
+          ],
         },
         {
           title: "🌐 Software Development:",
-          content:
-            "Web Development [MongoDb, Express.Js, React.js, Node Js] (MERN) Stack",
+          content: "Web Development (MERN Stack), Gen AI (LLM Agents)",
         },
       ],
       //logo images here
@@ -106,118 +129,6 @@ const skills = {
         },
       ],
     },
-    // {
-    //   title: "Competition & Co-curricular Activities",
-    //   fileName: "DesignImg",
-    //   skills: [
-
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe Illustrator",
-    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
-    //       style: {
-    //         color: "#FF7C00",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Inkscape",
-    //       fontAwesomeClassname: "simple-icons:inkscape",
-    //       style: {
-    //         color: "#000000",
-    //       },
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "Gallery",
-    //   fileName: "DesignImg",
-    //   skills: [
-
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe Illustrator",
-    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
-    //       style: {
-    //         color: "#FF7C00",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Inkscape",
-    //       fontAwesomeClassname: "simple-icons:inkscape",
-    //       style: {
-    //         color: "#000000",
-    //       },
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "Blogs",
-    //   fileName: "DesignImg",
-    //   skills: [
-
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe Illustrator",
-    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
-    //       style: {
-    //         color: "#FF7C00",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Inkscape",
-    //       fontAwesomeClassname: "simple-icons:inkscape",
-    //       style: {
-    //         color: "#000000",
-    //       },
-    //     },
-    // ],
-    // },
-    ,
   ],
 };
 
@@ -380,200 +291,6 @@ const degrees = {
   ],
 };
 
-const certifications = {
-  certifications: [
-    {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
-      color_code: "#8C151599",
-    },
-    {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
-    {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
-      logo_path: "microsoft_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
-      alt_name: "Microsoft",
-      color_code: "#D83B0199",
-    },
-    {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
-    {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
-    {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-  ],
-};
-
-//   title: "Experience",
-//   subtitle: "Work, Internship and Volunteership",
-//   description:
-//     "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
-//   header_image_path: "experience.svg",
-//   sections: [
-//     {
-//       title: "Work",
-//       work: true,
-//       experiences: [
-//         {
-//           title: "Research Assistant",
-//           company: "Dependable Autonomy Laboratory, Northeastern University",
-//           company_url: "https://www.northeastern.edu/",
-//           logo_path: "northeastern_logo.png",
-//           duration: "Nov 2024 - Present",
-//           location: "Boston, MA",
-//           description:
-//             "Conducting research on Real-Time Hybrid Control for Obstacle Avoidance in Autonomous Robots/Drones Using Visual Language Models (VLMs) and Reinforcement Learning. Integrated state-of-the-art reinforcement learning algorithms for robots with ROS and Gazebo simulations.",
-//           color: "#000000",
-//         },
-//         {
-//           title: "Teaching Assistant- AI Lead",
-//           company: "Northeastern University",
-//           company_url: "https://www.northeastern.edu/",
-//           logo_path: "northeastern_logo.png",
-//           duration: "Dec 2024 - Present",
-//           location: "Boston, MA",
-//           description:
-//             "Course: JRNL 6460 - Artificial Intelligence in Media Industry (AI-MI), Instructor: Prof. John Wihbey. Conducted sessions on Prompt engineering, Generative AI models, LLMs Integration, Diffusion models, Custom GPT and fine-tuning demonstrating their applications in the media industry. Designed hands-on AI sandboxing activities to enhance student engagement and applied learning. Developed custom pipelines for extracting, cleaning, and structuring news and social media data, ensuring high-quality datasets for various media-related studies. Mentored students and media professionals in integrating AI solutions into content creation, newsroom automation, and audience engagement strategies.",
-//           color: "#000000",
-//         },
-//       ],
-//     },
-//     {
-//       title: "Internships",
-//       experiences: [
-//         {
-//           title: "Research Intern",
-//           company: "Computational Intelligence Lab, Indian Institute of Science (IISc)",
-//           company_url: "https://www.iisc.ac.in/",
-//           logo_path: "iisc_logo.png",
-//           duration: "Jun 2023 - Dec 2023",
-//           location: "Bangalore, India",
-//           description:
-//             "Worked on the development of semi-autonomous drone for precision pesticide spraying on tall trees and challenging agricultural environments. Developed an algorithm to dynamically adjust drone height based on real-time depth estimation from the canopy and terrain below the drone, using Intel RealSense cameras, lidar, radar. Tested and deployed computer vision algorithms for image segmentation and object detection suitable for edge computation to detect the plants and efficiently align drones with plants for spraying. Performed extensive simulation of algorithms created using ROS(Python, C++) on Gazebo Simulator.",
-//           color: "#000000",
-//         },
-//         {
-//           title: "Artificial Intelligence Intern",
-//           company: "UMA - Universidad María Auxiliadora",
-//           company_url: "https://www.uma.edu.pe/",
-//           logo_path: "uma_logo.png",
-//           duration: "Mar 2024 - May 2024",
-//           location: "Lima, Peru",
-//           description:
-//             "Worked on the project “Chatbot Queries in the Integrated University Management System at Universidad María Auxiliadora (UMA), Lima” as part of a capstone project collaboration. Developed Conversational AI agent workflow capable of generating responses using queries from university database. Implemented intent and entity recognition, enabling the AI agent to deliver context-aware, personalized responses. Built a student-facing chatbot, providing access to personalized university data (fees, results, library dues, etc.), reducing administrative workload by 40% through automated, real-time responses. Managed end-to-end project coordination, collaborating with a cross-functional team of six students and UMA staff.",
-//           color: "#000000",
-//         },
-//   ],
-// },
-//     {
-//       title: "Leadership",
-//        experiences: [
-//       {
-//         title: "Research Intern",
-//         company: "Computational Intelligence Lab, Indian Institute of Science (IISc)",
-//         company_url: "https://www.iisc.ac.in/",
-//         logo_path: "iisc_logo.png",
-//         duration: "Jun 2023 - Dec 2023",
-//         location: "Bangalore, India",
-//         description:
-//           "Worked on the development of semi-autonomous drone for precision pesticide spraying on tall trees and challenging agricultural environments. Developed an algorithm to dynamically adjust drone height based on real-time depth estimation from the canopy and terrain below the drone, using Intel RealSense cameras, lidar, radar. Tested and deployed computer vision algorithms for image segmentation and object detection suitable for edge computation to detect the plants and efficiently align drones with plants for spraying. Performed extensive simulation of algorithms created using ROS(Python, C++) on Gazebo Simulator.",
-//         color: "#000000",
-//       },
-//     ],
-//     },
-
-//   ],
-// };
-
 const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
@@ -591,11 +308,27 @@ const experience = {
           company: "Dependable Autonomy Laboratory, Northeastern University",
           company_url: "https://www.northeastern.edu/",
           logo_path: require("./assests/images/neu-logo.png"),
-          duration: "Nov 2024 - Present",
+          duration: "Oct 2024 - Jun 2025",
           location: "Boston, MA",
           description: [
-            "Conducting research on Real-Time Hybrid Control for Obstacle Avoidance in Autonomous Robots/Drones Using Visual Language Models (VLMs) and exploring Safe Reinforcement Learning.",
-            "Integrated state-of-the-art reinforcement learning algorithms for robots with ROS and Gazebo simulations.",
+            'Contributed to "Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments" (AIAA Scitech 2026) — https://arc.aiaa.org/doi/abs/10.2514/6.2026-0566',
+            "Conducted research on Safe Reinforcement Learning in Autonomous Robots/Drones using Visual Language Models (VLMs).",
+            "Integrated state-of-the-art reinforcement learning algorithms for robots with ROS (Python, C++) and Gazebo simulations.",
+          ],
+          color: "#000000",
+        },
+        {
+          title: "Lead Teaching Assistant",
+          company:
+            "Khoury College of Computer Sciences, Northeastern University",
+          company_url: "https://www.khoury.northeastern.edu/",
+          logo_path: require("./assests/images/neu-logo.png"),
+          duration: "Jan 2026 - Present",
+          location: "Boston, MA",
+          description: [
+            "Collaborating with Dr. Daniel Feinberg to support students and professionals in CS 5047 — Exploring AI Trends and Tools.",
+            "Leading and coordinating daily activities of the teaching assistant team, ensuring smooth course operations.",
+            "Hosting live office hours, providing real-time support and guidance to students on AI concepts and tools.",
           ],
           color: "#000000",
         },
@@ -606,13 +339,12 @@ const experience = {
           company_url:
             "https://camd.northeastern.edu/research/initiatives/aims/",
           logo_path: require("./assests/images/camd.png"),
-          duration: "Dec 2024 - Present",
+          duration: "Dec 2024 - Jun 2025",
           location: "Boston, MA",
           description: [
             "Course: JRNL 6460 - Artificial Intelligence in Media Industry (AI-MI), Instructor: Prof. John Wihbey.",
-            "Conducted sessions on Prompt engineering, Generative AI models, LLMs Integration, Diffusion models, Custom GPT and fine-tuning demonstrating their applications in the media industry.",
+            "Created learning resources for prompt engineering, generative AI models, LLM integration, diffusion models, Custom GPT and fine-tuning demonstrating their applications in the media industry.",
             "Designed hands-on AI sandboxing activities to enhance student engagement and applied learning.",
-            "Developed custom pipelines for extracting, cleaning, and structuring news and social media data, ensuring high-quality datasets for various media-related studies.",
             "Mentored students and media professionals in integrating AI solutions into content creation, newsroom automation, and audience engagement strategies.",
           ],
           color: "#000000",
@@ -628,9 +360,14 @@ const experience = {
           company: "Tesla",
           company_url: "https://www.tesla.com/",
           logo_path: require("./assests/images/tesla.png"),
-          duration: "Jun 2025 - Sep 2025",
+          duration: "Sep 2025 - Jan 2026",
           location: "Austin, Texas, United States",
-          description: [],
+          description: [
+            "Designed and deployed deep learning and rule-based computer vision algorithms for anomaly detection, automating quality inspection across high-volume production lines and providing live tracking insights via dashboards.",
+            "Developed Halcon-based high-speed pattern-matching algorithms for industrial robotic PLC systems, achieving sub-millimeter positional accuracy and robust performance under varying scenarios.",
+            "Developed a high-precision defect analysis system for microscopic inspection using profilometer, achieving accuracy within <100 microns.",
+            "Worked with diverse vision sensors including 3D ToF, stereo and RGB cameras, monochrome cameras, and profilometers for applications spanning object detection to high-precision microscopic inspection.",
+          ],
           color: "#CC0000",
         },
         {
@@ -641,7 +378,12 @@ const experience = {
           duration: "Jun 2025 - Sep 2025",
           location: "Los Angeles, California, United States",
           color: "#6366F1",
-          description: [],
+          description: [
+            "Built an end-to-end digital twin platform integrating a computer vision pipeline for automated inventory tracking and shipment identification to support autonomous robotic forklift operations.",
+            "Trained custom models on large-scale warehouse camera feeds using Vision-Language Models (VLMs) for annotation, achieving 96.4% accuracy in shipment detection from overhead cameras.",
+            "Optimized multi-camera streaming and processing pipelines, reducing latency by 60–70% for real-time tracking.",
+            "Developed a ROS2-based quadruped warehouse assistant to locate shipments, update inventory, and share real-time mapping data with autonomous forklifts through the digital twin platform.",
+          ],
         },
         {
           title: "Research Intern",
@@ -731,48 +473,7 @@ const publicationsHeader = {
 };
 
 const publications = {
-  data: [
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-  ],
+  data: [],
 };
 
 // Blogs Section
@@ -805,34 +506,74 @@ const blogSection = {
 };
 
 // Contact Page
-const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "",
-  },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "",
-    avatar_image_path: "blogs_image.svg",
-  },
-  addressSection: {
-    title: "Address",
-    subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
-    locality: "Kanodar",
-    country: "IN",
-    region: "Gujarat",
-    postalCode: "385520",
-    streetAddress: "Ambavadi vas",
-    avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
-  },
-  phoneSection: {
-    title: "",
-    subtitle: "",
-  },
+const contactPageData = {};
+
+// Events & Activities (ethereal carousel)
+const events = {
+  title: "Events & Activities",
+  subtitle: "Hackathons, competitions, and technical events",
+  items: [
+    {
+      title: "Winner — International Datathon by CDS, IISc",
+      description: "AI-generated content detection",
+      image: require("./assests/images/events/iisc-win.jpg"),
+      link: null,
+    },
+    {
+      title: "Top 15 — Yale University Hackathon",
+      description: "Memora : Solving dementia among lonely seniors!",
+      image: require("./assests/images/events/yale.jpeg"),
+      link: null,
+    },
+    {
+      title: "Best Product Design — Harvard University",
+      description: "InsureMe Inclusive Insurance, Smarter Investments",
+      image: require("./assests/images/events/harvard.jpeg"),
+      link: null,
+    },
+    {
+      title: "Top 15 — Eyantra Competition, IIT Bombay",
+      description: "Sentinel Drone",
+      image: require("./assests/images/eyantra.jpeg"),
+      link: null,
+    },
+    {
+      title: "Robotics Summit & Expo, Boston",
+      description: "volunteered in conference",
+      image: require("./assests/images/events/summit.jpg"),
+      link: null,
+    },
+    {
+      title: "YC Hackathon — PerceptAI",
+      description: "Built PerceptAI - Brand Intelligence Platform",
+      image: require("./assests/images/events/YC.jpg"),
+      link: "https://yc-hack-woad.vercel.app/",
+    },
+  ],
+};
+
+// Featured News (news ticker banner)
+const featuredNews = {
+  items: [
+    {
+      title: "Summer Internship got Featured in Northeastern Global News",
+      url:
+        "https://news.northeastern.edu/2025/11/18/autonomous-forklift-warehousing/",
+    },
+    {
+      title: "Research Study got accepted in AIAA Scitech",
+      url: "https://arc.aiaa.org/doi/abs/10.2514/6.2026-0566",
+    },
+    {
+      title: "Started project blog series on Medium",
+      url:
+        "https://medium.com/@yashphalle/building-an-autonomous-vehicle-block-by-block-d7128d564094",
+    },
+  ],
+};
+
+const certifications = {
+  certifications: [],
 };
 
 export {
@@ -851,4 +592,6 @@ export {
   publications,
   blogSection,
   contactPageData,
+  events,
+  featuredNews,
 };

@@ -1,29 +1,113 @@
+.timeline-accordion-wrapper {
+  width: 100%;
+  padding: 0 5% 2rem;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
 .experience-heading {
   font-size: 2.5em;
   margin-bottom: 20px;
-  /* text-align: center; */
 }
 
 .experience-section {
   display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .experience-left {
-  flex: 1;
+  flex: 0 0 320px;
+  max-width: 380px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+}
+
+.experience-carousel {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.experience-carousel.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.experience-carousel.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+.experience-carousel .carousel-item {
+  height: 320px;
+  position: relative;
+}
+
+.experience-carousel .carousel-control-prev,
+.experience-carousel .carousel-control-next {
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  width: 15%;
+}
+
+.experience-carousel:hover .carousel-control-prev,
+.experience-carousel:hover .carousel-control-next {
+  opacity: 0.8;
 }
 
 .experience-right {
-  flex: 2;
+  flex: 1;
+  min-width: 0;
 }
 
 .experience-image {
   width: 100%;
-  height: 400px; /* Set a fixed height */
-  /* Ensure the image covers the entire area */
-  border-radius: 10px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Optional: focus on upper part of image (good for people/events) – use class .experience-image--top on img to override */
+.experience-image--top {
+  object-position: center top;
+}
+
+/* Optional: focus on center – default above */
+.experience-image--center {
+  object-position: center center;
+}
+
+.experience-image-placeholder {
+  width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  background: rgba(166, 225, 250, 0.3);
+}
+
+@media (max-width: 900px) {
+  .experience-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .experience-left {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .experience-carousel .carousel-item,
+  .experience-image,
+  .experience-image-placeholder {
+    height: 280px;
+  }
+
+  .experience-right {
+    width: 100%;
+  }
 }

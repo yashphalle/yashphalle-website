@@ -26,7 +26,7 @@ class Gallery extends Component {
             <div className="gallery-grid">
               <div className="gallery-item">
                 <img
-                  src={require("../../assests/images/iisc-win.jpg")}
+                  src={require("../../assests/images/events/iisc-win.jpg")}
                   alt="IISc Research Experience"
                   className="gallery-image"
                 />
@@ -37,7 +37,7 @@ class Gallery extends Component {
               </div>
               <div className="gallery-item">
                 <img
-                  src={require("../../assests/images/comp1.jpg")}
+                  src={require("../../assests/images/eyantra.jpeg")}
                   alt="Competition Achievement"
                   className="gallery-image"
                 />
@@ -46,7 +46,39 @@ class Gallery extends Component {
                   <p>Leading teams to victory</p>
                 </div>
               </div>
-              {/* Add more gallery items as needed */}
+              <div className="gallery-item">
+                <img
+                  src={require("../../assests/images/events/iot_win.jpeg")}
+                  alt="IoT / Competition"
+                  className="gallery-image"
+                />
+                <div className="gallery-caption">
+                  <h4>IoT & Competitions</h4>
+                  <p>Wins and technical events</p>
+                </div>
+              </div>
+              <div className="gallery-item">
+                <img
+                  src={require("../../assests/images/events/summit2.jpeg")}
+                  alt="Summit"
+                  className="gallery-image"
+                />
+                <div className="gallery-caption">
+                  <h4>Summit & Expo</h4>
+                  <p>Robotics and industry events</p>
+                </div>
+              </div>
+              <div className="gallery-item">
+                <img
+                  src={require("../../assests/images/events/YC 2.jpg")}
+                  alt="YC"
+                  className="gallery-image"
+                />
+                <div className="gallery-caption">
+                  <h4>YC & Startups</h4>
+                  <p>Startup and innovation events</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

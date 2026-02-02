@@ -23,12 +23,14 @@ function SeoHeader() {
   let mail = socialMediaLinks
     .find((media) => media.link.startsWith("mailto"))
     .link.substring("mailto:".length);
-  let job = experience.sections
-    ?.find((section) => section.work)
-    ?.experiences?.at(0);
+  // First section with experiences (e.g. Internships or Research & Teaching) — use first role as current
+  const sectionWithWork = experience.sections?.find(
+    (section) => section.experiences?.length > 0
+  );
+  let job = sectionWithWork?.experiences?.at(0);
 
   let credentials = [];
-  certifications.certifications.forEach((certification) => {
+  (certifications.certifications || []).forEach((certification) => {
     credentials.push({
       "@context": "https://schema.org",
       "@type": "EducationalOccupationalCredential",
@@ -45,11 +47,13 @@ function SeoHeader() {
     email: mail,
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
-    worksFor: {
-      "@type": "Organization",
-      name: job.company,
-    },
+    ...(job && {
+      jobTitle: job.title,
+      worksFor: {
+        "@type": "Organization",
+        name: job.company,
+      },
+    }),
     address: {
       "@type": "PostalAddress",
       addressLocality: contactPageData.addressSection?.locality,
@@ -62,8 +66,8 @@ function SeoHeader() {
   };
   return (
     <Helmet>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
+      <title>{seo?.title ?? "Portfolio"}</title>
+      <meta name="description" content={seo?.description ?? ""} />
       <meta property="og:title" content={seo?.og?.title} />
       <meta property="og:type" content={seo?.og?.type} />
       <meta property="og:url" content={seo?.og?.url} />
