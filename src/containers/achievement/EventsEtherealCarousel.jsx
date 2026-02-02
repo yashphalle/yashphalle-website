@@ -20,11 +20,14 @@ export default function EventsEtherealCarousel(props) {
 
   useEffect(() => {
     if (!wrapRef.current || items.length === 0) return;
+    if (typeof ResizeObserver === "undefined") return;
+
     const measureStep = () => {
       if (!wrapRef.current) return;
       const w = wrapRef.current.getBoundingClientRect().width;
       setStepPx(w);
     };
+
     const ro = new ResizeObserver(measureStep);
     ro.observe(wrapRef.current);
     return () => ro.disconnect();
