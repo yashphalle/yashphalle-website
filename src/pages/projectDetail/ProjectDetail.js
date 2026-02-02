@@ -38,7 +38,7 @@ export default function ProjectDetail(props) {
       <Header theme={theme} />
       <div className="project-detail-content">
         <Link
-          to={{ pathname: "/home", state: { scrollToProjects: true } }}
+          to="/projects"
           className="project-detail-back"
           style={{ color: theme.imageHighlight }}
         >
@@ -74,11 +74,21 @@ export default function ProjectDetail(props) {
               </div>
             )}
             <div className="project-detail-description">
-              {project.description.split("\n").map((line, idx) => (
-                <p key={idx} style={{ color: theme.secondaryText }}>
-                  {line.trim() || <br />}
-                </p>
-              ))}
+              <p
+                className="project-detail-summary"
+                style={{ color: theme.secondaryText }}
+              >
+                {project.description}
+              </p>
+              {project.bulletPoints && project.bulletPoints.length > 0 && (
+                <ul className="project-detail-bullets">
+                  {project.bulletPoints.map((point, idx) => (
+                    <li key={idx} style={{ color: theme.secondaryText }}>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div className="project-detail-actions">
               <a
@@ -94,7 +104,7 @@ export default function ProjectDetail(props) {
                 View on GitHub
               </a>
               <Link
-                to={{ pathname: "/home", state: { scrollToProjects: true } }}
+                to="/projects"
                 className="project-detail-btn project-detail-btn-secondary"
                 style={{
                   borderColor: theme.imageHighlight,

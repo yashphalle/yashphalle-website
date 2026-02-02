@@ -182,6 +182,22 @@
   color: #1a1a2e !important;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.project-tag {
+  font-size: 12px;
+  font-family: "Google Sans Regular";
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea !important;
+}
+
 .project-link {
   margin-top: auto;
   padding-top: 16px;
@@ -189,31 +205,23 @@
   text-align: left;
 }
 
-.project-link a {
+.view-details-btn {
   display: inline-flex;
   align-items: center;
-  text-decoration: none;
   font-size: 14px;
   font-family: "Google Sans Medium";
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 8px 16px;
   border-radius: 8px;
-  background: rgba(128, 128, 128, 0.08);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
   margin-left: -16px;
 }
 
-.project-link a:hover {
-  background: rgba(128, 128, 128, 0.15);
+.project-card:hover .view-details-btn {
   transform: translateX(4px);
-}
-
-.project-link a svg {
-  transition: transform 0.3s ease;
-}
-
-.project-link a:hover svg {
-  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 @media (max-width: 1380px) {

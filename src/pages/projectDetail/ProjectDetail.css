@@ -72,6 +72,36 @@
   margin-bottom: 2rem;
 }
 
+.project-detail-summary {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.project-detail-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-detail-bullets li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.project-detail-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+}
+
 .project-detail-description p {
   margin: 0 0 0.75rem 0;
 }

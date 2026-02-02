@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
@@ -10,23 +11,18 @@ import {
   publicationsHeader,
   publications,
   projects,
-  socialMediaLinks,
+  greeting,
 } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
 // Project Card Component for portfolio.js data structure
 function ProjectCard({ project, theme }) {
-  const openProjectInNewTab = (url) => {
-    var win = window.open(url, "_blank");
-    win.focus();
-  };
-
   return (
-    <div
+    <Link
+      to={`/project/${project.slug}`}
       className="project-card"
-      style={{ backgroundColor: theme.highlight }}
-      onClick={() => openProjectInNewTab(project.githubLink)}
+      style={{ backgroundColor: theme.highlight, textDecoration: "none" }}
     >
       <Fade bottom duration={2000} distance="40px">
         <div className="project-card-content">
@@ -47,33 +43,28 @@ function ProjectCard({ project, theme }) {
             >
               {project.description}
             </p>
+            {project.tags && project.tags.length > 0 && (
+              <div className="project-tags">
+                {project.tags.slice(0, 3).map((tag) => (
+                  <span
+                    key={tag}
+                    className="project-tag"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
             <div className="project-link">
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: theme.text }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <svg
-                  aria-hidden="true"
-                  height="20"
-                  viewBox="0 0 16 16"
-                  width="20"
-                  fill={theme.text}
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                  ></path>
-                </svg>
-                <span style={{ marginLeft: "8px" }}>View on GitHub</span>
-              </a>
+              <span className="view-details-btn" style={{ color: theme.text }}>
+                View Details →
+              </span>
             </div>
           </div>
         </div>
       </Fade>
-    </div>
+    </Link>
   );
 }
 
@@ -114,9 +105,7 @@ class Projects extends Component {
         <Button
           text={"More Projects"}
           className="project-button"
-          href={
-            socialMediaLinks.find((link) => link.name === "Github")?.link || "#"
-          }
+          href={greeting.githubProfile}
           newTab={true}
           theme={theme}
         />

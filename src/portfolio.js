@@ -19,9 +19,10 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-    "🎓 MS AI Student at Northeastern University | 🤖 AI+Robotics Researcher | 🚗 Machine Vision Intern at Tesla | � Research Assistant at Dependable Autonomy Lab | 🌟 Research Intern at IISc Bangalore",
+    "🎓 MS AI Student at Northeastern University | 🤖 AI+Robotics Researcher | 🚗 Machine Vision Intern at Tesla | 🔬 Research Assistant at Dependable Autonomy Lab | 🌟 Research Intern at IISc Bangalore",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+  githubProfile: "https://github.com/yashphalle",
 };
 
 const socialMediaLinks = [
@@ -135,70 +136,93 @@ const skills = {
 const projects = {
   data: [
     {
+      slug: "donkey-car-rl",
       title:
         "Deep Reinforcement Learning Algorithms for Autonomous Driving in Simulation",
-      description: `
-        ● Conducted a comparative analysis of DDPG, TD3, and PPO reinforcement learning algorithms within the Donkey Car simulator.
-        ● Enhanced algorithm performance by Reward Engineering and developing image encoder-decoder architecture for better feature extraction.
-        ● PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.
-      `,
+      description:
+        "Comparative analysis of DDPG, TD3, and PPO algorithms in Donkey Car simulator. Enhanced performance through Reward Engineering and image encoder-decoder architecture.",
+      bulletPoints: [
+        "Conducted a comparative analysis of DDPG, TD3, and PPO reinforcement learning algorithms within the Donkey Car simulator.",
+        "Enhanced algorithm performance by Reward Engineering and developing image encoder-decoder architecture for better feature extraction.",
+        "PPO outperformed DDPG and TD3, demonstrating superior sample stability, training efficiency, and less sensitivity to hyperparameter tuning.",
+      ],
+      tags: [
+        "Reinforcement Learning",
+        "Python",
+        "PyTorch",
+        "Autonomous Driving",
+      ],
       thumbnail: require("./assests/images/donkeycar.png"),
       githubLink: "https://github.com/yashphalle/donkey-car-RL",
     },
     {
+      slug: "mapngo",
       title: "MapNGo",
-      description: `
-      ● Developed an ROS package in C++ for A*, Dijkstra, and RRT based path planning algorithms for autonomous navigation
-        using SLAM-generated occupancy grid maps.
-      ● Integrated path planning with a path following controller for autonomous mobile robot operation (tested on TurtleBot3).
-      ● Containerized the entire ROS system using Docker, enabling simplified deployment process across different environments.
-      `,
+      description:
+        "ROS package in C++ for A*, Dijkstra, and RRT path planning algorithms using SLAM-generated occupancy grid maps. Containerized with Docker.",
+      bulletPoints: [
+        "Developed an ROS package in C++ for A*, Dijkstra, and RRT based path planning algorithms for autonomous navigation using SLAM-generated occupancy grid maps.",
+        "Integrated path planning with a path following controller for autonomous mobile robot operation (tested on TurtleBot3).",
+        "Containerized the entire ROS system using Docker, enabling simplified deployment process across different environments.",
+      ],
+      tags: ["ROS", "C++", "Path Planning", "SLAM", "Docker"],
       thumbnail: require("./assests/images/proj2.png"),
       githubLink:
         "https://github.com/yashphalle/MapNGo-Simultaneous-Localization-Mapping-and-Optimized-Path-Planning",
     },
     {
+      slug: "lingoros",
       title: "LingoROS",
-      description: `
-      ● Developing an open-source ROS package in Python for providing natural language control interface connecting LLMs to
-          existing robots without modifying existing robot codebases
-      ● Implemented a hybrid system with automatic ROS topic discovery and Ollama/phi3 integration, converting natural
-          language commands into structured JSON for robotic execution
-      ● Optimized LLM inference for low-latency onboard computation, enabling real-time processing of user commands on
-        resource-constrained robotic platform.
-      `,
+      description:
+        "Open-source ROS package providing natural language control interface connecting LLMs to robots. Optimized for low-latency onboard computation.",
+      bulletPoints: [
+        "Developing an open-source ROS package in Python for providing natural language control interface connecting LLMs to existing robots without modifying existing robot codebases.",
+        "Implemented a hybrid system with automatic ROS topic discovery and Ollama/phi3 integration, converting natural language commands into structured JSON for robotic execution.",
+        "Optimized LLM inference for low-latency onboard computation, enabling real-time processing of user commands on resource-constrained robotic platform.",
+      ],
+      tags: ["ROS", "Python", "LLM", "NLP", "Robotics"],
       thumbnail: require("./assests/images/lingo.png"),
       githubLink: "https://github.com/yashphalle/LingoROS",
     },
     {
+      slug: "half-cheetah-rl",
       title: "Enhancing Robotic Locomotion in Half Cheetah Using RL",
-      description: `
-      ● Implemented and compared PPO (on-policy) and DDPG (off-policy) reinforcement learning algorithms in the OpenAI Half-Cheetah mujoco environment, demonstrating that DDPG achieved 5x higher rewards despite requiring more computational resources.
-      ● Developed custom biomechanically-inspired reward functions that significantly improved locomotion efficiency and prevented undesirable behaviors (e.g., inverted movement), leading to greater forward distance traveled during training episodes.
-      ● Conducted systematic hyperparameter optimization using Optuna across 40+ trials, experimenting with varying neural network architectures (1-3 hidden layers) to identify optimal configurations for both algorithms.
-      `,
+      description:
+        "Compared PPO and DDPG algorithms in OpenAI Half-Cheetah environment - DDPG achieved 5x higher rewards with custom reward functions.",
+      bulletPoints: [
+        "Implemented and compared PPO (on-policy) and DDPG (off-policy) reinforcement learning algorithms in the OpenAI Half-Cheetah mujoco environment, demonstrating that DDPG achieved 5x higher rewards despite requiring more computational resources.",
+        "Developed custom biomechanically-inspired reward functions that significantly improved locomotion efficiency and prevented undesirable behaviors (e.g., inverted movement), leading to greater forward distance traveled during training episodes.",
+        "Conducted systematic hyperparameter optimization using Optuna across 40+ trials, experimenting with varying neural network architectures (1-3 hidden layers) to identify optimal configurations for both algorithms.",
+      ],
+      tags: ["Reinforcement Learning", "MuJoCo", "Python", "Optuna"],
       thumbnail: require("./assests/images/cheetah-rl.png"),
       githubLink: "https://github.com/yashphalle/Half-Cheetah-RL-Project",
     },
-
     {
-      title:
-        "Safe Landing Spot Detection For UAVs Using Deep Learning Algorithms Suitable for Energy-Constrained Computing",
-      description: `
-        ● Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.
-        ● Optimized the system for edge computing, reducing model size while maintaining high accuracy.
-        ● Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.
-      `,
+      slug: "uav-landing-detection",
+      title: "Safe Landing Spot Detection For UAVs Using Deep Learning",
+      description:
+        "Real-time system for detecting safe UAV landing spots using deep learning models optimized for edge computing.",
+      bulletPoints: [
+        "Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.",
+        "Optimized the system for edge computing, reducing model size while maintaining high accuracy.",
+        "Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.",
+      ],
+      tags: ["Deep Learning", "Computer Vision", "UAV", "Edge Computing"],
       thumbnail: require("./assests/images/proj4.png"),
-      githubLink: "https://yashphalle.github.io/yashphalle-website/#/",
+      githubLink: "https://github.com/yashphalle",
     },
     {
+      slug: "sentinel-drone",
       title: "Sentinel Drone",
-      description: `
-        ● Developed a drone capable of hovering over the entire city detecting suspicious objects and geolocating in Qgis map to assist police in surveillance tasks.
-        ● Implemented Image processing, feature matching, and path planning algorithms in ROS.
-        ● Tech Stack- Python- ROS, Pytorch, OpenCV, QGIS
-      `,
+      description:
+        "Drone system for city surveillance detecting suspicious objects and geolocating on QGIS maps using ROS and computer vision.",
+      bulletPoints: [
+        "Developed a drone capable of hovering over the entire city detecting suspicious objects and geolocating in QGIS map to assist police in surveillance tasks.",
+        "Implemented Image processing, feature matching, and path planning algorithms in ROS.",
+        "Tech Stack: Python, ROS, PyTorch, OpenCV, QGIS",
+      ],
+      tags: ["ROS", "Python", "Computer Vision", "PyTorch", "OpenCV"],
       thumbnail: require("./assests/images/proj3.jpg"),
       githubLink:
         "https://github.com/yashphalle/2D-Lidar-based-SLAM-and-Autonomous-Path-Planning-for-TurtleBot",
