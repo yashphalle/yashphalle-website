@@ -293,9 +293,9 @@ const degrees = {
 
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Internship and Leadership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have gained hands-on experience in Computer Vision, Robotics, and AI through roles at Tesla, research labs, and innovative startups. From developing machine vision systems for industrial automation to building autonomous robots, I bridge the gap between cutting-edge research and real-world deployment. I also enjoy mentoring and leading technical teams in robotics competitions and university clubs.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -461,7 +461,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "I build projects at the intersection of Robotics, Computer Vision, and Deep Learning. From autonomous navigation systems to reinforcement learning agents, my work focuses on deploying intelligent algorithms on real-world robotic platforms.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -480,27 +480,24 @@ const publications = {
 const blogSection = {
   title: "Blogs",
   subtitle: "My thoughts and experiences in AI, Robotics, and Technology",
+  comingSoonMessage:
+    "More blogs cooking... Currently teaching robots to write for me! 🤖✍️",
   blogs: [
     {
-      url: "https://medium.com/@yashphalle/ai-in-robotics",
-      image: require("./assests/images/proj2.png"),
-      title: "The Future of AI in Robotics",
+      url:
+        "https://news.northeastern.edu/2025/11/18/autonomous-forklift-warehousing/",
+      image: require("./assests/images/warp.jpg"),
+      title: "Featured in Northeastern Global News",
       description:
-        "Exploring how artificial intelligence is revolutionizing the field of robotics and autonomous systems.",
+        "My summer internship work on autonomous forklifts and warehouse robotics got featured in Northeastern Global News.",
     },
     {
-      url: "https://medium.com/@yashphalle/computer-vision-drones",
-      image: require("./assests/images/proj3.jpg"),
-      title: "Computer Vision for Autonomous Drones",
+      url:
+        "https://medium.com/@yashphalle/building-an-autonomous-vehicle-block-by-block-d7128d564094",
+      image: require("./assests/images/donkeycar.png"),
+      title: "Building an Autonomous Vehicle Block by Block",
       description:
-        "Deep dive into computer vision algorithms that enable drones to navigate and perform tasks autonomously.",
-    },
-    {
-      url: "https://medium.com/@yashphalle/reinforcement-learning",
-      image: require("./assests/images/proj4.png"),
-      title: "Reinforcement Learning in Real-World Applications",
-      description:
-        "How reinforcement learning is being applied to solve complex real-world problems in robotics and automation.",
+        "A comprehensive guide on building autonomous vehicles using deep reinforcement learning algorithms in simulation.",
     },
   ],
 };

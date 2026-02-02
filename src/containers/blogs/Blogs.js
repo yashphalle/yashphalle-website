@@ -12,9 +12,10 @@ export default function Blogs() {
       </div>
       <div className="blog-main-div">
         <div className="blog-text-div">
-          {blogSection.blogs.map((blog) => {
+          {blogSection.blogs.map((blog, index) => {
             return (
               <BlogCard
+                key={index}
                 blog={{
                   url: blog.url,
                   image: blog.image,
@@ -26,6 +27,23 @@ export default function Blogs() {
           })}
         </div>
       </div>
+      {/* Coming Soon Section */}
+      {blogSection.comingSoonMessage && (
+        <div className="coming-soon-section">
+          <div className="coming-soon-card">
+            <div className="coming-soon-icon">📝</div>
+            <h3 className="coming-soon-title">More Coming Soon!</h3>
+            <p className="coming-soon-message">
+              {blogSection.comingSoonMessage}
+            </p>
+            <div className="coming-soon-dots">
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
