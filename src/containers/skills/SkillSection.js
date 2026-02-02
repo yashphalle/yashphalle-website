@@ -23,10 +23,10 @@ class SkillSection extends Component {
       <div
         className="skills-pills-wrapper"
         style={{
-          ["--highlight"]: theme.highlight,
-          ["--imageHighlight"]: theme.imageHighlight,
-          ["--jacketColor"]: theme.jacketColor,
-          ["--secondaryText"]: theme.secondaryText,
+          "--highlight": theme.highlight,
+          "--imageHighlight": theme.imageHighlight,
+          "--jacketColor": theme.jacketColor,
+          "--secondaryText": theme.secondaryText,
         }}
       >
         {skills.data.map((skillGroup, groupIndex) => (

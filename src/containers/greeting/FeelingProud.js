@@ -2,13 +2,12 @@ import React, { Component } from "react";
 
 class FeelingProud extends Component {
   render() {
-    const theme = this.props.theme;
-    // Change this to curousel 
+    // Change this to carousel
     return (
-      
-       <img alt="yash photo" src={require("../../assests/images/profile-pic (5).png")}  ></img> 
-       
-      
+      <img
+        alt="Yash"
+        src={require("../../assests/images/profile-pic (5).png")}
+      ></img>
     );
   }
 }
@@ -34,7 +33,7 @@ export default FeelingProud;
 //         <div>
 //           <img
 //             alt="Image 1"
-            
+
 //             src={require("../../assets/images/ibm_logo.png")}
 //             style={{ width: "700px", height: "700px" }}
 //           />

@@ -48,12 +48,12 @@ export default function EventsEtherealCarousel(props) {
       className="events-ethereal"
       id="achievements"
       style={{
-        ["--ethereal-bg"]: theme.body,
-        ["--ethereal-text"]: theme.text,
-        ["--ethereal-highlight"]: theme.highlight,
-        ["--ethereal-accent"]: theme.imageHighlight,
-        ["--ethereal-secondary"]: theme.secondaryText,
-        ["--slide-width"]: `${SLIDE_PERCENT}%`,
+        "--ethereal-bg": theme.body,
+        "--ethereal-text": theme.text,
+        "--ethereal-highlight": theme.highlight,
+        "--ethereal-accent": theme.imageHighlight,
+        "--ethereal-secondary": theme.secondaryText,
+        "--slide-width": `${SLIDE_PERCENT}%`,
       }}
       >
       <div className="events-ethereal-inner">
