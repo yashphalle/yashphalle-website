@@ -468,7 +468,29 @@ const blogSection = {
 };
 
 // Contact Page
-const contactPageData = {};
+const contactPageData = {
+  contactSection: {
+    title: "Get In Touch",
+    profile_image_path: "profile-pic (5).png",
+    description:
+      "I'm always open to discussing AI, Robotics, Computer Vision, or any exciting opportunities. Feel free to reach out!",
+  },
+  blogSection: {
+    title: "Blogs",
+    subtitle:
+      "I write about my experiences in AI, Robotics, and building autonomous systems.",
+    link: "https://medium.com/@yashphalle",
+  },
+  addressSection: {
+    title: "Location",
+    subtitle: "Boston, Massachusetts, USA",
+    location_map_link: "https://maps.google.com/?q=Boston,MA",
+  },
+  phoneSection: {
+    title: "Email",
+    subtitle: "yashphallem@gmail.com",
+  },
+};
 
 // Events & Activities (ethereal carousel)
 const events = {
@@ -538,6 +560,14 @@ const certifications = {
   certifications: [],
 };
 
+// Contact Info (for contact container)
+const contactInfo = {
+  title: "Contact Me",
+  subtitle: "Let's connect and discuss opportunities in AI & Robotics",
+  number: "",
+  email_address: "yashphallem@gmail.com",
+};
+
 export {
   settings,
   seo,
@@ -553,6 +583,7 @@ export {
   publications,
   blogSection,
   contactPageData,
+  contactInfo,
   events,
   featuredNews,
 };

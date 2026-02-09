@@ -108,6 +108,7 @@ class Header extends Component {
                   Gallery
                 </NavLink>
               </li>
+              {/* Contact page disabled - uncomment to restore
               <li>
                 <NavLink
                   to="/contact"
@@ -120,6 +121,7 @@ class Header extends Component {
                   Contact Me
                 </NavLink>
               </li>
+              */}
             </ul>
           </header>
         </div>

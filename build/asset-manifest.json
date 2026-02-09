@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.0ceb7e6d.css",
-    "main.js": "./static/js/main.6f91561e.js",
+    "main.css": "./static/css/main.19e2760d.css",
+    "main.js": "./static/js/main.91c857b0.js",
     "static/media/lead2.jpg": "./static/media/lead2.543ed07d2a60c59b8c68.jpg",
     "static/media/lead3.jpg": "./static/media/lead3.69c9f3382b0264443ea2.jpg",
     "static/media/YC 2.jpg": "./static/media/YC 2.c3cd78efdaeafca583b8.jpg",
@@ -21,6 +21,7 @@
     "static/media/intern1.jpg": "./static/media/intern1.841ff67d4f5758396a36.jpg",
     "static/media/lab1.jpg": "./static/media/lab1.9f7037040ef0a8255a68.jpg",
     "static/media/proj2.png": "./static/media/proj2.3b1be805941be3679032.png",
+    "static/media/profile-pic (1).png": "./static/media/profile-pic (1).c94bb3734fa02ac1c3e2.png",
     "static/media/lab4.jpg": "./static/media/lab4.40055ffb003b7253dfa4.jpg",
     "static/media/rc_plane.jpg": "./static/media/rc_plane.40055ffb003b7253dfa4.jpg",
     "static/media/fa-solid-900.svg": "./static/media/fa-solid-900.9fa614346b4e81decc62.svg",
@@ -75,11 +76,11 @@
     "static/media/python-logo-only.svg": "./static/media/python-logo-only.002d9ebee5fb844fc9f3.svg",
     "static/media/Ros_logo.svg": "./static/media/Ros_logo.0638d0fd8a6a07981c7c.svg",
     "index.html": "./index.html",
-    "main.0ceb7e6d.css.map": "./static/css/main.0ceb7e6d.css.map",
-    "main.6f91561e.js.map": "./static/js/main.6f91561e.js.map"
+    "main.19e2760d.css.map": "./static/css/main.19e2760d.css.map",
+    "main.91c857b0.js.map": "./static/js/main.91c857b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ceb7e6d.css",
-    "static/js/main.6f91561e.js"
+    "static/css/main.19e2760d.css",
+    "static/js/main.91c857b0.js"
   ]
 }

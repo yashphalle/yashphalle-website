@@ -14,7 +14,7 @@ import {
   greeting,
 } from "../../portfolio.js";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+// import ProjectsImg from "./ProjectsImg";
 
 // Project Card Component for portfolio.js data structure
 function ProjectCard({ project, theme }) {
