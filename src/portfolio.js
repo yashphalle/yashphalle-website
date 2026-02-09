@@ -230,97 +230,40 @@ const projects = {
   ],
 };
 
-// Education Page
-const competitiveSites = {
-  competitiveSites: [
-    {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
-      profileLink: "https://leetcode.com/layman_brother/",
-    },
-    {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
-      profileLink: "https://www.hackerrank.com/layman_brother",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
-    },
-  ],
-};
-
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      title: "Northeastern University",
+      subtitle: "Master of Science in Artificial Intelligence | GPA: 3.93/4.00",
+      logo_path: "neu-logo.png",
+      alt_name: "Northeastern University",
+      duration: "Sep 2024 - Present",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "📍 Boston, MA",
+        "⚡ Key Coursework: Algorithms, Foundations of AI, Machine Learning, Reinforcement Learning, Robotics Sensing and Navigation",
       ],
-      website_link: "http://iiitk.ac.in",
+      website_link: "https://www.northeastern.edu/",
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      title: "Vishwakarma Institute of Information Technology",
+      subtitle: "Bachelor of Technology in Computer Engineering | CGPA: 9.6/10",
+      logo_path: "",
+      alt_name: "VIIT Pune",
+      duration: "Aug 2020 - May 2024",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "📍 Pune, India",
+        "⚡ Key Coursework: Artificial Intelligence, Computer Vision, Machine Learning, Deep Learning, Edge AI, Robotics, Data Structures and Algorithms, Software Engineering",
       ],
-      website_link: "https://www.indiana.edu/",
+      website_link: "https://www.viit.ac.in/",
     },
   ],
 };
 
 const experience = {
-  title: "Experience",
-  subtitle: "Work, Internship and Leadership",
-  description:
-    "I have gained hands-on experience in Computer Vision, Robotics, and AI through roles at Tesla, research labs, and innovative startups. From developing machine vision systems for industrial automation to building autonomous robots, I bridge the gap between cutting-edge research and real-world deployment. I also enjoy mentoring and leading technical teams in robotics competitions and university clubs.",
-  header_image_path: "experience.svg",
+  title: "",
+  subtitle: "",
+  description: "",
+  header_image_path: "",
   sections: [
     {
       work: true,
@@ -484,16 +427,14 @@ const experience = {
 // Projects Page
 const projectsHeader = {
   title: "Projects",
-  description:
-    "I build projects at the intersection of Robotics, Computer Vision, and Deep Learning. From autonomous navigation systems to reinforcement learning agents, my work focuses on deploying intelligent algorithms on real-world robotic platforms.",
-  avatar_image_path: "projects_image.svg",
+  description: "",
+  avatar_image_path: "",
 };
 
 const publicationsHeader = {
   title: "Publications",
-  description:
-    "I have worked on and published a few research papers and publications of my own.",
-  avatar_image_path: "projects_image.svg",
+  description: "",
+  avatar_image_path: "",
 };
 
 const publications = {
@@ -519,9 +460,9 @@ const blogSection = {
       url:
         "https://medium.com/@yashphalle/building-an-autonomous-vehicle-block-by-block-d7128d564094",
       image: require("./assests/images/donkeycar.png"),
-      title: "Building an Autonomous Vehicle Block by Block",
+      title: "Building an Autonomous Vehicle: Block by Block!",
       description:
-        "A comprehensive guide on building autonomous vehicles using deep reinforcement learning algorithms in simulation.",
+        "A hands-on journey building a complete autonomous vehicle software stack from the ground up using CARLA - covering perception, motion control, path planning, and full system integration.",
     },
   ],
 };
@@ -604,7 +545,6 @@ export {
   socialMediaLinks,
   skills,
   projects,
-  competitiveSites,
   degrees,
   certifications,
   experience,

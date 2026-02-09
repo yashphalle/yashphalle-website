@@ -17,13 +17,11 @@ class Experience extends Component {
         <div className="basic-experience">
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
+              {/* Image removed - uncomment below to restore
               <div className="experience-heading-img-div">
-                {/* <img
-									src={require(`../../assests/images/${experience["header_image_path"]}`)}
-									alt=""
-								/> */}
                 <ExperienceImg theme={theme} />
               </div>
+              */}
               <div className="experience-heading-text-div">
                 <h1
                   className="experience-heading-text"

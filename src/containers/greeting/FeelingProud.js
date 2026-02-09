@@ -6,7 +6,7 @@ class FeelingProud extends Component {
     return (
       <img
         alt="Yash"
-        src={require("../../assests/images/profile-pic (5).png")}
+        src={require("../../assests/images/profile-pic (1).png")}
       ></img>
     );
   }
