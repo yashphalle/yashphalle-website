@@ -111,3 +111,25 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .timeline-accordion-wrapper {
+    padding: 0 3% 1.5rem;
+  }
+
+  .experience-heading {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .experience-carousel .carousel-item,
+  .experience-image,
+  .experience-image-placeholder {
+    height: 200px;
+  }
+
+  .experience-section {
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+}

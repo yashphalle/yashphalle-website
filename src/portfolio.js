@@ -19,7 +19,7 @@ const greeting = {
   logo_name: "Yash Phalle",
   nickname: "",
   subTitle:
-    "🎓 MS AI Student at Northeastern University | 🤖 AI+Robotics Researcher | 🚗 Machine Vision Intern at Tesla | 🔬 Research Assistant at Dependable Autonomy Lab | 🌟 Research Intern at IISc Bangalore",
+    "🎓 MS AI Student at Northeastern University | 🤖 AI+Robotics Researcher | 🚗 Ex-Machine Vision Intern at Tesla | 🔬 Research Assistant at Dependable Autonomy Lab | 🌟 Ex-Research Intern at IISc Bangalore",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   githubProfile: "https://github.com/yashphalle",
@@ -199,20 +199,6 @@ const projects = {
       githubLink: "https://github.com/yashphalle/Half-Cheetah-RL-Project",
     },
     {
-      slug: "uav-landing-detection",
-      title: "Safe Landing Spot Detection For UAVs Using Deep Learning",
-      description:
-        "Real-time system for detecting safe UAV landing spots using deep learning models optimized for edge computing.",
-      bulletPoints: [
-        "Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.",
-        "Optimized the system for edge computing, reducing model size while maintaining high accuracy.",
-        "Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.",
-      ],
-      tags: ["Deep Learning", "Computer Vision", "UAV", "Edge Computing"],
-      thumbnail: require("./assests/images/proj4.png"),
-      githubLink: "https://github.com/yashphalle",
-    },
-    {
       slug: "sentinel-drone",
       title: "Sentinel Drone",
       description:
@@ -226,6 +212,20 @@ const projects = {
       thumbnail: require("./assests/images/proj3.jpg"),
       githubLink:
         "https://github.com/yashphalle/2D-Lidar-based-SLAM-and-Autonomous-Path-Planning-for-TurtleBot",
+    },
+    {
+      slug: "uav-landing-detection",
+      title: "Safe Landing Spot Detection For UAVs Using Deep Learning",
+      description:
+        "Real-time system for detecting safe UAV landing spots using deep learning models optimized for edge computing.",
+      bulletPoints: [
+        "Developed a real-time system for detecting safe landing spots for UAVs using deep learning models such as MobileNetV2, U-Net, SegNet, and DeepLabv3, and conducted a comparative analysis to identify the most efficient model.",
+        "Optimized the system for edge computing, reducing model size while maintaining high accuracy.",
+        "Achieved a tradeoff with 87% segmentation accuracy and 50% reduction in model size.",
+      ],
+      tags: ["Deep Learning", "Computer Vision", "UAV", "Edge Computing"],
+      thumbnail: require("./assests/images/proj4.png"),
+      githubLink: "https://github.com/yashphalle",
     },
   ],
 };
@@ -330,10 +330,11 @@ const experience = {
           duration: "Sep 2025 - Jan 2026",
           location: "Austin, Texas, United States",
           description: [
-            "Designed and deployed deep learning and rule-based computer vision algorithms for anomaly detection, automating quality inspection across high-volume production lines and providing live tracking insights via dashboards.",
-            "Developed Halcon-based high-speed pattern-matching algorithms for industrial robotic PLC systems, achieving sub-millimeter positional accuracy and robust performance under varying scenarios.",
-            "Developed a high-precision defect analysis system for microscopic inspection using profilometer, achieving accuracy within <100 microns.",
-            "Worked with diverse vision sensors including 3D ToF, stereo and RGB cameras, monochrome cameras, and profilometers for applications spanning object detection to high-precision microscopic inspection.",
+            "Developed Deep learning and rule-based CV algorithms for anomaly detection, quality inspection, and mechanical retrofit performance validation across production lines, reducing reliance on manual inspection processes.",
+            "Designed Halcon based high-speed pattern matching algorithm for industrial robotic PLC systems calibration, achieving sub-millimeter positional accuracy and robust performance across varying lighting and environmental conditions.",
+            "Built a high-precision 3D laser profiler test bench for microscopic defect analysis in collaboration with mechanical engineering team, enabling automated detection of surface-level defects.",
+            "Integrated CV models with internal production dashboards to run as daily batch jobs, delivering automated defect insights and trigger alerts across production lines.",
+            "Built a proof-of-concept 3D ToF-based alignment system for industrial robotic arm to detect and correct mechanical offsets, minimizing scrap risk and production losses on the line.",
           ],
           color: "#CC0000",
         },
@@ -391,7 +392,7 @@ const experience = {
       leadership: true,
       experiences: [
         {
-          title: "Programming Domain Head",
+          title: "Technical Head",
           company: "VIIT Robotics",
           company_url:
             "https://www.linkedin.com/company/viitrobotics/posts/?feedView=all",
@@ -399,9 +400,8 @@ const experience = {
           duration: "Jun 2021 - Nov 2023",
           location: "Pune, Maharashtra, India",
           description: [
-            "Managed daily activities of the Programming team (size over 30 students) for various competitions like Robocon, Eyantra, World Robotics Championship and some regional-level competitions.",
-            "Conducted various robotics workshops.",
-            "Achievements: AIR -21 ABU Robocon, IIT Delhi, AIR-15 World Robotics Championship, New Delhi, TOP 50 Eyantra Robotics Competition, IIT Bombay.",
+            "Led a 30+ member technical team, overseeing robotics software development and competition strategy - including large-scale Robocon robots (50-100 kg payload) with perception and navigation algorithms, fastest line-followers robot, and surveillance drones.",
+            "Achieved AIR 21 at ABU Robocon (IIT Delhi), AIR 15 at World Robotics Championship, Final stage selection for E Yantra (IIT Bombay).",
           ],
           color: "#000000",
         },
@@ -498,13 +498,19 @@ const events = {
   subtitle: "Hackathons, competitions, and technical events",
   items: [
     {
-      title: "Winner — International Datathon by CDS, IISc",
+      title: "YC Hackathon — PerceptAI",
+      description: "Built PerceptAI - Brand Intelligence Platform",
+      image: require("./assests/images/events/YC.jpg"),
+      link: "https://yc-hack-woad.vercel.app/",
+    },
+    {
+      title: "Winner - International Datathon by CDS, IISc",
       description: "AI-generated content detection",
       image: require("./assests/images/events/iisc-win.jpg"),
       link: null,
     },
     {
-      title: "Top 15 — Yale University Hackathon",
+      title: "Top 15 - Yale University Hackathon",
       description: "Memora : Solving dementia among lonely seniors!",
       image: require("./assests/images/events/yale.jpeg"),
       link: null,
@@ -516,7 +522,7 @@ const events = {
       link: null,
     },
     {
-      title: "Top 15 — Eyantra Competition, IIT Bombay",
+      title: "Top 15 - Eyantra Competition, IIT Bombay",
       description: "Sentinel Drone",
       image: require("./assests/images/eyantra.jpeg"),
       link: null,
@@ -526,12 +532,6 @@ const events = {
       description: "volunteered in conference",
       image: require("./assests/images/events/summit.jpg"),
       link: null,
-    },
-    {
-      title: "YC Hackathon — PerceptAI",
-      description: "Built PerceptAI - Brand Intelligence Platform",
-      image: require("./assests/images/events/YC.jpg"),
-      link: "https://yc-hack-woad.vercel.app/",
     },
   ],
 };

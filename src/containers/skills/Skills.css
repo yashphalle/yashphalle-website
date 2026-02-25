@@ -3,6 +3,8 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem 2rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .skills-pills-main {
@@ -36,7 +38,6 @@
   letter-spacing: 0.02em;
 }
 
-/* Internal sub-groups: "Heading : item 1, item 2" on one line, same pill style as first group */
 .skills-pills-subgroups {
   display: flex;
   flex-direction: column;
@@ -45,10 +46,9 @@
 
 .skills-subgroup {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem 0.75rem;
-  overflow-x: auto;
   min-width: 0;
 }
 
@@ -66,9 +66,8 @@
 
 .skills-subgroup .skills-pills {
   display: inline-flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.4rem;
-  flex-shrink: 0;
 }
 
 .skills-pills {
@@ -98,6 +97,10 @@
 /* Legacy / shared */
 .skills-main-div {
   overflow: hidden;
+}
+
+.skills-main-div.skills-pills-main {
+  overflow: visible;
 }
 
 .skills-header {
@@ -140,10 +143,8 @@
   .skills-header {
     font-size: 50px;
   }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
@@ -158,6 +159,7 @@
   }
   .skills-main-div {
     flex-direction: column;
+    overflow: visible !important;
   }
   .skills-text-div {
     margin-left: 0px;
@@ -171,30 +173,92 @@
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
   .skills-image-div > * {
     margin-top: 0px;
   }
+
+  /* Skills pills mobile fixes */
+  .skills-pills-wrapper {
+    padding: 0 0.75rem 1.5rem;
+  }
+
+  .skills-pills-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-category-block {
+    margin-bottom: 1rem;
+  }
+
+  .skills-category-label {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-subgroup {
+    gap: 0.4rem;
+  }
+
+  .skills-subgroup-label {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .skills-pill {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.55rem;
+    white-space: nowrap;
+  }
+
+  .skills-pills {
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .skills-pills-subgroups {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  /* Kill react-reveal animations on mobile that cause left-clipping */
+  .skills-pills-main [style],
+  .skills-pills-main div[style] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }
+
 .carousel-container {
-  width: 500px; /* Set the width of the carousel */
-  height: 500px; /* Set the height of the carousel */
+  width: 500px;
+  max-width: 100%;
+  height: 500px;
   overflow: hidden;
   position: relative;
 }
+
 .carousel-container img {
-  width: 100%; /* Makes the image take up the full width of the container */
-  height: 100%; /* Makes the image take up the full height of the container */
-  object-fit: cover; /* This will ensure the image covers the area without stretching */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 /* Style for emojis - keep natural colors */
 .skill-emoji {
   font-weight: bold;
-  /* No gradient applied - emojis keep their natural colors */
 }
 
 /* Style for skill title text - bold with gradient */

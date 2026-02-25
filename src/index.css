@@ -63,3 +63,26 @@ body {
     line-height: normal;
   }
 }
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main {
+    width: 95%;
+    padding: 10px 5px;
+    margin-top: 2rem;
+  }
+}

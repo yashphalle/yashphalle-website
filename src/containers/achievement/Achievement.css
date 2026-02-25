@@ -66,3 +66,25 @@
 .achievement-description .achievement-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6em;
+  }
+
+  .subTitle {
+    font-size: 1.2em;
+  }
+
+  .achievement-image {
+    height: 220px;
+  }
+
+  .achievement-description h3 {
+    font-size: 1.1em;
+  }
+
+  .achievement-description p {
+    font-size: 0.9em;
+  }
+}

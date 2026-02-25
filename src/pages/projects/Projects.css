@@ -79,7 +79,7 @@
 /* Project Cards from portfolio.js */
 .projects-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
   gap: 32px;
   margin: 60px auto;
   padding: 0 40px;

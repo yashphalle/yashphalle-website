@@ -165,8 +165,19 @@
     line-height: normal;
     text-align: center;
   }
+  .square {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+  }
+  .blog-main-div {
+    flex-direction: column;
+  }
+  .blog-text-div {
+    justify-content: center;
+  }
   .coming-soon-card {
-    padding: 30px 40px;
+    padding: 24px 20px;
     margin: 0 10px;
   }
   .coming-soon-icon {

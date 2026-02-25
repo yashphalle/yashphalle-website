@@ -49,7 +49,7 @@ class SkillSection extends Component {
               const categoryLabel = skillItem.title.trim();
 
               return (
-                <Fade key={index} right duration={800} delay={index * 100}>
+                <Fade key={index} bottom duration={800} delay={index * 100}>
                   <div className="skills-category-block">
                     <div
                       className="skills-category-label"

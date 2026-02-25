@@ -5,6 +5,8 @@
   max-width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
+  position: relative;
+  z-index: 100;
 }
 
 .header ul {
@@ -12,8 +14,8 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
 }
+
 .grey-color {
   color: #868e96;
 }
@@ -21,13 +23,11 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
 }
 
 .header .logo {
@@ -38,11 +38,11 @@
   margin-top: 10px;
   line-height: normal;
 }
+
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
   padding: 0 10px;
-  /* color: #55198b; */
 }
 
 /* menu */
@@ -54,7 +54,7 @@
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 
 /* menu icon */
@@ -103,7 +103,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 500px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -141,8 +141,22 @@
     display: none;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header li a {
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .header .logo {
+    font-size: 1.2em;
   }
 }

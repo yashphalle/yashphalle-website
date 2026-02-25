@@ -25,3 +25,18 @@
 .skill-image {
   height: 48px;
 }
+
+@media (max-width: 768px) {
+  .dev-icons {
+    font-size: 2rem;
+  }
+
+  .software-skill-inline {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+
+  .skill-image {
+    height: 36px;
+  }
+}
