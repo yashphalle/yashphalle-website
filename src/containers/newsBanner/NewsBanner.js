@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { featuredNews } from "../../portfolio";
+import { usePortfolio } from "../../context/PortfolioContext";
 import "./NewsBanner.css";
 
 const TICKER_DURATION = 35; /* seconds for one full cycle */
 
 export default function NewsBanner(props) {
   const theme = props.theme;
+  const { featuredNews } = usePortfolio();
   const [dismissed, setDismissed] = useState(false);
 
   const items = featuredNews?.items || [];

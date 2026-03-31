@@ -1,17 +1,19 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import {
-  greeting,
-  seo,
-  socialMediaLinks,
-  experience,
-  contactPageData,
-  certifications,
-} from "../../portfolio.js";
+import { usePortfolio } from "../../context/PortfolioContext";
 
 function SeoHeader() {
+  const {
+    greeting,
+    seo,
+    socialMediaLinks,
+    experience,
+    contactPageData,
+    certifications,
+  } = usePortfolio();
+
   let sameAs = [];
-  socialMediaLinks
+  (socialMediaLinks || [])
     .filter(
       (media) =>
         !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
@@ -20,17 +22,21 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
+  const mailMedia = (socialMediaLinks || []).find((media) =>
+    media.link.startsWith("mailto")
+  );
+  let mail = mailMedia
+    ? mailMedia.link.substring("mailto:".length)
+    : "";
+
   // First section with experiences (e.g. Internships or Research & Teaching) — use first role as current
-  const sectionWithWork = experience.sections?.find(
+  const sectionWithWork = experience?.sections?.find(
     (section) => section.experiences?.length > 0
   );
   let job = sectionWithWork?.experiences?.at(0);
 
   let credentials = [];
-  (certifications.certifications || []).forEach((certification) => {
+  (certifications?.certifications || []).forEach((certification) => {
     credentials.push({
       "@context": "https://schema.org",
       "@type": "EducationalOccupationalCredential",
@@ -39,13 +45,14 @@ function SeoHeader() {
       description: certification.subtitle,
     });
   });
+
   const data = {
     "@context": "https://schema.org/",
     "@type": "Person",
-    name: greeting.title,
+    name: greeting?.title,
     url: seo?.og?.url,
     email: mail,
-    telephone: contactPageData.phoneSection?.subtitle,
+    telephone: contactPageData?.phoneSection?.subtitle,
     sameAs: sameAs,
     ...(job && {
       jobTitle: job.title,
@@ -56,14 +63,15 @@ function SeoHeader() {
     }),
     address: {
       "@type": "PostalAddress",
-      addressLocality: contactPageData.addressSection?.locality,
-      addressRegion: contactPageData.addressSection?.region,
-      addressCountry: contactPageData.addressSection?.country,
-      postalCode: contactPageData.addressSection?.postalCode,
-      streetAddress: contactPageData.addressSection?.streetAddress,
+      addressLocality: contactPageData?.addressSection?.locality,
+      addressRegion: contactPageData?.addressSection?.region,
+      addressCountry: contactPageData?.addressSection?.country,
+      postalCode: contactPageData?.addressSection?.postalCode,
+      streetAddress: contactPageData?.addressSection?.streetAddress,
     },
     hasCredential: credentials,
   };
+
   return (
     <Helmet>
       <title>{seo?.title ?? "Portfolio"}</title>

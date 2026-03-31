@@ -2,7 +2,34 @@ version: '3.7'
 
 services:
 
-  sample:
+  # MongoDB database
+  mongo:
+    image: mongo:6
+    container_name: portfolio-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  # Express API server
+  api:
+    container_name: portfolio-api
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/portfolio
+      - PORT=5000
+      - CORS_ORIGIN=http://localhost:3001
+    depends_on:
+      - mongo
+    restart: unless-stopped
+
+  # React frontend
+  frontend:
     container_name: portfolio
     build:
       context: .
@@ -12,5 +39,12 @@ services:
       - '/app/node_modules'
     ports:
       - 3001:3000
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+    depends_on:
+      - api
     # environment:
     #   - CHOKIDAR_USEPOLLING=true
+
+volumes:
+  mongo_data:

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
-import { events } from "../../portfolio";
+import { usePortfolio } from "../../context/PortfolioContext";
+import { resolveImageSrc } from "../../utils/imageUtils";
 import "./EventsEtherealCarousel.css";
 
 const SLIDE_PERCENT = 100;
@@ -7,6 +8,7 @@ const AUTO_ROTATE_MS = 3000;
 
 export default function EventsEtherealCarousel(props) {
   const theme = props.theme;
+  const { events } = usePortfolio();
   const items = events?.items || [];
   const [index, setIndex] = useState(0);
   const [stepPx, setStepPx] = useState(0);
@@ -81,7 +83,7 @@ export default function EventsEtherealCarousel(props) {
                 <div className="events-ethereal-card">
                   <div className="events-ethereal-card-img-wrap">
                     <img
-                      src={item.image}
+                      src={resolveImageSrc(item.image)}
                       alt=""
                       className="events-ethereal-card-img"
                     />

@@ -1,13 +1,14 @@
 import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { greeting } from "../../portfolio";
+import { usePortfolio } from "../../context/PortfolioContext";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import teslaLogo from "../../assests/images/tesla.png";
 
 export default function Greeting(props) {
   const theme = props.theme;
+  const { greeting } = usePortfolio();
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
