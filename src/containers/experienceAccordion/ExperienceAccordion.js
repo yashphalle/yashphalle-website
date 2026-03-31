@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import TimelineAccordion from "./TimelineAccordion.jsx";
 import "./ExperienceAccordion.css";
-import { experience } from "../../portfolio";
+import { usePortfolio } from "../../context/PortfolioContext";
 
 // Carousel images per section – from images/Internships, images/Lab, images/Leadership
 import internshipImage1 from "../../assests/images/Internships/intern1.jpg";
@@ -54,7 +54,8 @@ const SECTION_CAROUSEL_IMAGES = {
 
 export default function ExperienceAccordion(props) {
   const theme = props.theme;
-  const sections = props.sections || experience.sections || [];
+  const { experience } = usePortfolio();
+  const sections = props.sections || experience?.sections || [];
 
   // Enforce a stable section order so it doesn't "swap" unexpectedly
   const sectionRank = (section) => {

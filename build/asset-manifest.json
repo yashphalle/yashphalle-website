@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.19e2760d.css",
-    "main.js": "./static/js/main.91c857b0.js",
+    "main.css": "./static/css/main.90b107fd.css",
+    "main.js": "./static/js/main.a5199619.js",
     "static/media/lead2.jpg": "./static/media/lead2.543ed07d2a60c59b8c68.jpg",
     "static/media/lead3.jpg": "./static/media/lead3.69c9f3382b0264443ea2.jpg",
     "static/media/YC 2.jpg": "./static/media/YC 2.c3cd78efdaeafca583b8.jpg",
@@ -73,14 +73,14 @@
     "static/media/iot_win.jpeg": "./static/media/iot_win.4a31561223c803bce181.jpeg",
     "static/media/fa-regular-400.woff": "./static/media/fa-regular-400.2ccf005a6998d30de3d3.woff",
     "static/media/fa-regular-400.woff2": "./static/media/fa-regular-400.e5917ad1531005ea8c3f.woff2",
-    "static/media/python-logo-only.svg": "./static/media/python-logo-only.002d9ebee5fb844fc9f3.svg",
-    "static/media/Ros_logo.svg": "./static/media/Ros_logo.0638d0fd8a6a07981c7c.svg",
+    "static/media/python-logo-only.svg": "./static/media/python-logo-only.e6b5bdf0df1ebd61877e.svg",
+    "static/media/Ros_logo.svg": "./static/media/Ros_logo.9241d81c8145c6c94729.svg",
     "index.html": "./index.html",
-    "main.19e2760d.css.map": "./static/css/main.19e2760d.css.map",
-    "main.91c857b0.js.map": "./static/js/main.91c857b0.js.map"
+    "main.90b107fd.css.map": "./static/css/main.90b107fd.css.map",
+    "main.a5199619.js.map": "./static/js/main.a5199619.js.map"
   },
   "entrypoints": [
-    "static/css/main.19e2760d.css",
-    "static/js/main.91c857b0.js"
+    "static/css/main.90b107fd.css",
+    "static/js/main.a5199619.js"
   ]
 }

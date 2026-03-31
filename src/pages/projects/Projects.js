@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -6,17 +6,12 @@ import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import {
-  projectsHeader,
-  publicationsHeader,
-  publications,
-  projects,
-  greeting,
-} from "../../portfolio.js";
+import { usePortfolio } from "../../context/PortfolioContext";
+import { resolveImageSrc } from "../../utils/imageUtils";
 import "./Projects.css";
 // import ProjectsImg from "./ProjectsImg";
 
-// Project Card Component for portfolio.js data structure
+// Project Card Component
 function ProjectCard({ project, theme }) {
   return (
     <Link
@@ -28,7 +23,7 @@ function ProjectCard({ project, theme }) {
         <div className="project-card-content">
           <div className="project-image-container">
             <img
-              src={project.thumbnail}
+              src={resolveImageSrc(project.thumbnail)}
               alt={project.title}
               className="project-thumbnail"
             />
@@ -68,85 +63,86 @@ function ProjectCard({ project, theme }) {
   );
 }
 
-class Projects extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="projects-main">
-        <Header theme={theme} />
+function Projects(props) {
+  const theme = props.theme;
+  const { projectsHeader, publicationsHeader, publications, projects, greeting } =
+    usePortfolio();
+
+  return (
+    <div className="projects-main">
+      <Header theme={theme} />
+      <div className="basic-projects">
+        <Fade bottom duration={2000} distance="40px">
+          <div className="projects-heading-div">
+            {/* Image removed - uncomment below to restore
+            <div className="projects-heading-img-div">
+              <ProjectsImg theme={theme} />
+            </div>
+            */}
+            <div className="projects-heading-text-div">
+              <h1
+                className="projects-heading-text"
+                style={{ color: theme.text }}
+              >
+                {projectsHeader?.title}
+              </h1>
+              <p
+                className="projects-header-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {projectsHeader?.description}
+              </p>
+            </div>
+          </div>
+        </Fade>
+      </div>
+      <div className="projects-cards-container">
+        {(projects?.data || []).map((project, index) => (
+          <ProjectCard key={index} project={project} theme={theme} />
+        ))}
+      </div>
+      <Button
+        text={"More Projects"}
+        className="project-button"
+        href={greeting?.githubProfile}
+        newTab={true}
+        theme={theme}
+      />
+
+      {/* Publications  */}
+      {(publications?.data || []).length > 0 ? (
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              {/* Image removed - uncomment below to restore
-              <div className="projects-heading-img-div">
-                <ProjectsImg theme={theme} />
-              </div>
-              */}
-              <div className="projects-heading-text-div">
+            <div className="publications-heading-div">
+              <div className="publications-heading-text-div">
                 <h1
-                  className="projects-heading-text"
+                  className="publications-heading-text"
                   style={{ color: theme.text }}
                 >
-                  {projectsHeader.title}
+                  {publicationsHeader?.title}
                 </h1>
                 <p
                   className="projects-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {projectsHeader["description"]}
+                  {publicationsHeader?.description}
                 </p>
               </div>
             </div>
           </Fade>
         </div>
-        <div className="projects-cards-container">
-          {projects.data.map((project, index) => (
-            <ProjectCard key={index} project={project} theme={theme} />
-          ))}
-        </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
+      ) : null}
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        ) : null}
-
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub, index) => (
-            <PublicationCard key={index} pub={pub} theme={theme} />
-          ))}
-        </div>
-
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+      <div className="repo-cards-div-main">
+        {(publications?.data || []).map((pub, index) => (
+          <PublicationCard key={index} pub={pub} theme={theme} />
+        ))}
       </div>
-    );
-  }
+
+      <Footer theme={props.theme} onToggle={props.onToggle} />
+      <TopButton theme={props.theme} />
+    </div>
+  );
 }
 
 export default Projects;

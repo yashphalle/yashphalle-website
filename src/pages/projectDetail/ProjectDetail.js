@@ -3,13 +3,15 @@ import { useParams, Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-import { projects } from "../../portfolio";
+import { usePortfolio } from "../../context/PortfolioContext";
+import { resolveImageSrc } from "../../utils/imageUtils";
 import "./ProjectDetail.css";
 
 export default function ProjectDetail(props) {
   const { slug } = useParams();
   const theme = props.theme;
-  const project = projects.data.find((p) => p.slug === slug);
+  const { projects } = usePortfolio();
+  const project = (projects?.data || []).find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -49,7 +51,7 @@ export default function ProjectDetail(props) {
           style={{ borderColor: theme.highlight }}
         >
           <img
-            src={project.thumbnail}
+            src={resolveImageSrc(project.thumbnail)}
             alt={project.title}
             className="project-detail-image"
           />
