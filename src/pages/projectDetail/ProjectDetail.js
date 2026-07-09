@@ -15,7 +15,7 @@ export default function ProjectDetail(props) {
     return (
       <div
         className="project-detail-main"
-        style={{ backgroundColor: theme.body }}
+        style={{ backgroundColor: "#ffffff" }}
       >
         <Header theme={theme} />
         <div className="project-detail-not-found">
@@ -31,10 +31,7 @@ export default function ProjectDetail(props) {
   }
 
   return (
-    <div
-      className="project-detail-main"
-      style={{ backgroundColor: theme.body }}
-    >
+    <div className="project-detail-main" style={{ backgroundColor: "#ffffff" }}>
       <Header theme={theme} />
       <div className="project-detail-content">
         <Link
@@ -91,18 +88,34 @@ export default function ProjectDetail(props) {
               )}
             </div>
             <div className="project-detail-actions">
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-detail-btn project-detail-btn-primary"
-                style={{
-                  backgroundColor: theme.imageHighlight,
-                  color: "#fff",
-                }}
-              >
-                View on GitHub
-              </a>
+              {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-detail-btn project-detail-btn-primary"
+                  style={{
+                    backgroundColor: theme.imageHighlight,
+                    color: "#fff",
+                  }}
+                >
+                  View on GitHub
+                </a>
+              )}
+              {project.paperLink && (
+                <a
+                  href={project.paperLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-detail-btn project-detail-btn-primary"
+                  style={{
+                    backgroundColor: theme.imageHighlight,
+                    color: "#fff",
+                  }}
+                >
+                  View Paper
+                </a>
+              )}
               <Link
                 to="/projects"
                 className="project-detail-btn project-detail-btn-secondary"

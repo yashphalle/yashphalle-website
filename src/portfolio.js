@@ -136,6 +136,66 @@ const skills = {
 const projects = {
   data: [
     {
+      slug: "soccer-highlight-generation",
+      title:
+        "Automated Highlight Generation using Deep Learning in Soccer Matches",
+      description:
+        "Accepted at IEEE ICAD 2026. Automated soccer highlight generation using ResNet-3D, ResNet+GRU, and ResNet+LSTM, with a priority-based stitching algorithm to compress 90-minute matches into 5-minute highlights.",
+      bulletPoints: [
+        "Built an automated soccer highlight generation system using ResNet-3D, ResNet+GRU, and ResNet+LSTM architectures, achieving 91.1% accuracy on the SoccerNet dataset.",
+        "Designed a priority-based stitching algorithm to generate coherent 5-minute highlight video from 90-minute matches, ensuring inclusion of critical events (goals, penalties, red cards) while proportionally representing lower-priority events.",
+        "Accepted at IEEE ICAD 2026.",
+      ],
+      tags: [
+        "Deep Learning",
+        "Computer Vision",
+        "Video Analysis",
+        "ResNet",
+        "PyTorch",
+      ],
+      thumbnail: require("./assests/images/proj4.png"),
+      paperLink:
+        "https://drive.google.com/file/d/1zpz0g8muasxeBc9QYFx4YiE5BqM6SjAH/view",
+    },
+    {
+      slug: "autonomous-car-carla",
+      title: "AutonomousCar - CARLA",
+      description:
+        "Modular AV stack built from the ground up in CARLA: perception, behavior planning, path planning, and control layers connected via a SceneState interface.",
+      bulletPoints: [
+        "Building a modular AV stack from the ground up (ongoing): perception, behavior planning, path planning, and control layers connected via a SceneState interface.",
+        "Validated across seeded simulation scenarios with zero collisions and zero red light violations.",
+        "Documenting the journey on Medium: https://medium.com/@yashphalle/building-an-autonomous-vehicle-block-by-block-d7128d564094",
+      ],
+      tags: [
+        "Autonomous Driving",
+        "CARLA",
+        "Python",
+        "Perception",
+        "Planning",
+        "Control",
+      ],
+      thumbnail: require("./assests/images/Autonomous-car.png"),
+      githubLink: "https://github.com/yashphalle/AutonomousCar",
+    },
+    {
+      slug: "xav",
+      title: "Explainability in Autonomous Vehicles",
+      description:
+        "An AI + HCI project studying whether explanations of autonomous vehicle actions improve passenger trust calibration across driving scenarios.",
+      bulletPoints: [
+        "Research project at the intersection of AI and Human-Computer Interaction (HCI), focused on explainability in autonomous vehicles.",
+        "Investigates the core question: do explanations of AV actions improve passenger trust calibration across driving scenarios?",
+      ],
+      tags: [
+        "Explainable AI",
+        "Autonomous Vehicles",
+        "Human-Computer Interaction",
+      ],
+      thumbnail: require("./assests/images/xav.jpg"),
+      githubLink: "https://github.com/yashphalle/xav",
+    },
+    {
       slug: "donkey-car-rl",
       title:
         "Deep Reinforcement Learning Algorithms for Autonomous Driving in Simulation",
@@ -183,6 +243,21 @@ const projects = {
       tags: ["ROS", "Python", "LLM", "NLP", "Robotics"],
       thumbnail: require("./assests/images/lingo.png"),
       githubLink: "https://github.com/yashphalle/LingoROS",
+    },
+    {
+      slug: "av-odometry-boreas",
+      title: "AV Odometry Degradation Comparison in Adverse Weather - Boreas",
+      description:
+        "Comparison of LiDAR and visual odometry degradation under adverse weather (snow, rain) on the Boreas multi-season AV dataset, evaluated with ATE and RPE against GPS/IMU ground truth.",
+      bulletPoints: [
+        "Course project for EECE5554 Robotics: Sensing and Navigation (Team 10).",
+        "Compared LiDAR and visual odometry algorithm degradation under adverse weather conditions (snow, rain) using the Boreas multi-season autonomous driving dataset.",
+        "Evaluated estimated trajectories against accurate GPS/IMU ground truth using Absolute Trajectory Error (ATE) and Relative Pose Error (RPE) metrics.",
+      ],
+      tags: ["Visual Odometry", "LiDAR", "Autonomous Driving", "SLAM"],
+      thumbnail: require("./assests/images/Borease.png"),
+      githubLink:
+        "https://github.com/yashphalle/AV-Odometry-Degradation-Comparison-in-Adverse-Weather-Boreas",
     },
     {
       slug: "half-cheetah-rl",
@@ -278,7 +353,7 @@ const experience = {
           duration: "Oct 2024 - Jun 2025",
           location: "Boston, MA",
           description: [
-            'Contributed to "Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments" (AIAA Scitech 2026) — https://arc.aiaa.org/doi/abs/10.2514/6.2026-0566',
+            'Contributed to "Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments" (AIAA Scitech 2026): https://arc.aiaa.org/doi/abs/10.2514/6.2026-0566',
             "Conducted research on Safe Reinforcement Learning in Autonomous Robots/Drones using Visual Language Models (VLMs).",
             "Integrated state-of-the-art reinforcement learning algorithms for robots with ROS (Python, C++) and Gazebo simulations.",
           ],
@@ -293,7 +368,7 @@ const experience = {
           duration: "Jan 2026 - Present",
           location: "Boston, MA",
           description: [
-            "Collaborating with Dr. Daniel Feinberg to support students and professionals in CS 5047 — Exploring AI Trends and Tools.",
+            "Collaborating with Dr. Daniel Feinberg to support students and professionals in CS 5047 - Exploring AI Trends and Tools.",
             "Leading and coordinating daily activities of the teaching assistant team, ensuring smooth course operations.",
             "Hosting live office hours, providing real-time support and guidance to students on AI concepts and tools.",
           ],
@@ -498,7 +573,7 @@ const events = {
   subtitle: "Hackathons, competitions, and technical events",
   items: [
     {
-      title: "YC Hackathon — PerceptAI",
+      title: "YC Hackathon - PerceptAI",
       description: "Built PerceptAI - Brand Intelligence Platform",
       image: require("./assests/images/events/YC.jpg"),
       link: "https://yc-hack-woad.vercel.app/",
@@ -516,7 +591,7 @@ const events = {
       link: null,
     },
     {
-      title: "Best Product Design — Harvard University",
+      title: "Best Product Design - Harvard University",
       description: "InsureMe Inclusive Insurance, Smarter Investments",
       image: require("./assests/images/events/harvard.jpeg"),
       link: null,

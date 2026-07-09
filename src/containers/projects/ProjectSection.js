@@ -82,18 +82,34 @@ class ProjectSection extends Component {
                       >
                         View More
                       </Link>
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-button project-button-gh"
-                        style={{
-                          borderColor: theme.imageHighlight,
-                          color: theme.imageHighlight,
-                        }}
-                      >
-                        GitHub
-                      </a>
+                      {project.githubLink && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-button project-button-gh"
+                          style={{
+                            borderColor: theme.imageHighlight,
+                            color: theme.imageHighlight,
+                          }}
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {project.paperLink && (
+                        <a
+                          href={project.paperLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-button project-button-gh"
+                          style={{
+                            borderColor: theme.imageHighlight,
+                            color: theme.imageHighlight,
+                          }}
+                        >
+                          Paper
+                        </a>
+                      )}
                     </div>
                   </Card.Body>
                 </Card>
